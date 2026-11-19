@@ -1,9 +1,20 @@
-% Compilar com XeLaTeX (no Overleaf: Menu > Compiler > XeLaTeX).
+% Recomendado: XeLaTeX (Menu > Compiler > XeLaTeX) para usar Arial; com pdfLaTeX usa Helvetica, equivalente.
 \documentclass[12pt,a4paper]{article}
 
-\usepackage{fontspec}
-\IfFontExistsTF{Arial}{\setmainfont{Arial}}{%
-  \IfFontExistsTF{Liberation Sans}{\setmainfont{Liberation Sans}}{\setmainfont{TeX Gyre Heros}}}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{newunicodechar}
+  \newunicodechar{≥}{\ensuremath{\geq}}
+  \newunicodechar{≤}{\ensuremath{\leq}}
+  \usepackage[scaled=0.92]{helvet}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage{fontspec}
+  \IfFontExistsTF{Arial}{\setmainfont{Arial}}{%
+    \IfFontExistsTF{Liberation Sans}{\setmainfont{Liberation Sans}}{\setmainfont{TeX Gyre Heros}}}
+\fi
 \usepackage[provide=*,brazilian]{babel}
 \usepackage[a4paper,top=3cm,left=3cm,bottom=2cm,right=2cm,headheight=15pt,headsep=0.6cm]{geometry}
 \usepackage{setspace}
@@ -48,28 +59,31 @@
 \end{center}
 
 \vspace{12pt}
-\noindent Integrantes: Marivan Olivares; Humberto Torres; Vinicius
+\noindent Integrantes: Marivan Olivares; Humberto Torres; Vinicius\footnote{Curso de Graduação, AFYA Centro Universitário UNIMA, Maceió, AL. Disciplina de Inteligência Artificial, Prof. Icaro Ferreira. Código e dados disponíveis em: \repo.}
 
 \vspace{6pt}
 \begin{singlespace}
 \secaosemnumero{Resumo}
 O descarte incorreto de resíduos contamina materiais recicláveis e reduz a eficiência da coleta seletiva. Este trabalho apresenta o EcoTriagem, aplicação que integra visão computacional, processamento de linguagem natural (PLN), aprendizado de máquina e tomada de decisão para identificar o material de um resíduo por foto e orientar o descarte a partir de perguntas em português. A imagem é descrita por uma MobileNetV2 pré-treinada e classificada por uma máquina de vetores de suporte (SVM) com calibração isotônica, e o rótulo é lido por reconhecimento óptico de caracteres (OCR). As perguntas são classificadas em nove intenções por TF-IDF e SVM linear, e um agente baseado em objetivos combina as evidências por regras sensíveis à confiança, acionando uma busca A* até o ponto de coleta mais próximo. No TrashNet, o classificador atingiu 88,9\% de acurácia e 95,6\% de acerto nas decisões automáticas de alta confiança; o reconhecimento de intenções obteve F1-macro de 0,852 em teste redigido manualmente; e, em 379 cenários ponta a ponta, o sistema acertou 91,2\% dos materiais quando respondeu, abstendo-se em 4,5\% dos casos.
 
+\vspace{12pt}
+\noindent\textbf{Palavras-chave:} classificação de resíduos; aprendizado por transferência; calibração; reconhecimento de intenções; busca A*.
+
 \end{singlespace}
 
 \section{Introdução}
-A Política Nacional de Resíduos Sólidos (PNRS) prevê a coleta seletiva e a logística reversa, e a Resolução CONAMA n.º 275/2001 padronizou as cores dos coletores de recicláveis. Na prática, porém, o cidadão muitas vezes não sabe de que material é um objeto, em qual coletor descartá-lo nem onde entregá-lo. A separação incorreta contamina o material reciclável.
+A Política Nacional de Resíduos Sólidos (PNRS) prevê a coleta seletiva e a logística reversa (Brasil, 2010), e a Resolução CONAMA n.º 275/2001 padronizou as cores dos coletores de recicláveis (Conselho Nacional do Meio Ambiente, 2001). Na prática, porém, o cidadão muitas vezes não sabe de que material é um objeto, em qual coletor descartá-lo nem onde entregá-lo. A separação incorreta contamina o material reciclável.
 
-Classificadores de imagens de resíduos já foram propostos, mas costumam ser avaliados isoladamente, apenas pela acurácia, sem considerar como a confiança da previsão deve orientar a decisão nem como o usuário formula sua dúvida. O objetivo deste trabalho é projetar, implementar e avaliar uma aplicação em que visão computacional e PLN atuam no mesmo fluxo: o usuário envia uma foto, faz perguntas em português e um agente combina as evidências para responder de forma contextualizada.
+Classificadores de imagens de resíduos já foram propostos (Siqueira, 2021), mas costumam ser avaliados isoladamente, apenas pela acurácia, sem considerar como a confiança da previsão deve orientar a decisão nem como o usuário formula sua dúvida. O objetivo deste trabalho é projetar, implementar e avaliar uma aplicação em que visão computacional e PLN atuam no mesmo fluxo: o usuário envia uma foto, faz perguntas em português e um agente combina as evidências para responder de forma contextualizada.
 
 As contribuições são: um sistema integrado e reprodutível em CPU; um critério de seleção de modelos baseado na qualidade da confiança; a identificação de fotos duplicadas com rótulos conflitantes no TrashNet; e um conjunto autoral de intenções em português.
 
 \section{Fundamentação teórica e trabalhos relacionados}
-Um agente baseado em objetivos mantém um estado interno e escolhe ações que o aproximam de um objetivo, e regras com encadeamento para frente tornam a decisão explicável. O A* expande nós em ordem de f(n) = g(n) + h(n) e é ótimo quando a heurística h é admissível.
+Um agente baseado em objetivos mantém um estado interno e escolhe ações que o aproximam de um objetivo, e regras com encadeamento para frente tornam a decisão explicável (Russell; Norvig, 2022). O A* expande nós em ordem de f(n) = g(n) + h(n) e é ótimo quando a heurística h é admissível (Russell; Norvig, 2022).
 
-Na visão computacional, a MobileNetV2 é uma rede convolucional leve cujas características pré-treinadas se transferem bem para outras tarefas. Como SVMs não produzem probabilidades, estas podem ser obtidas por calibração isotônica. No PLN, TF-IDF com classificadores lineares é uma linha de base forte para textos curtos.
+Na visão computacional, a MobileNetV2 é uma rede convolucional leve cujas características pré-treinadas se transferem bem para outras tarefas. Como SVMs não produzem probabilidades, estas podem ser obtidas por calibração isotônica (Faceli \textit{et al.}, 2021). No PLN, TF-IDF com classificadores lineares é uma linha de base forte para textos curtos (Caseli; Nunes, 2023).
 
-No TrashNet, Siqueira comparou quatro redes convolucionais, entre elas a MobileNetV2, e obteve 91,97\% de acurácia com uma ResNet34. Esses trabalhos tratam a classificação isoladamente, enquanto o presente estudo a integra ao PLN e à decisão.
+No TrashNet, Siqueira (2021) comparou quatro redes convolucionais, entre elas a MobileNetV2, e obteve 91,97\% de acurácia com uma ResNet34. Esses trabalhos tratam a classificação isoladamente, enquanto o presente estudo a integra ao PLN e à decisão.
 
 \section{Metodologia}
 \subsection{Arquitetura do sistema}
@@ -79,6 +93,7 @@ A Figura~\ref{fig:arq} resume o fluxo. A imagem é padronizada com OpenCV, descr
 \centering
 \caption{Arquitetura do EcoTriagem}\label{fig:arq}
 \includegraphics[width=\textwidth]{arquitetura.pdf}
+\fonte{Fonte: Elaborada pelos autores (2026).}
 \end{figure}
 
 \subsection{Dados}
@@ -87,7 +102,7 @@ Utilizou-se o TrashNet, com 2.527 fotos em seis classes. Três pares de fotos id
 A equipe construiu um conjunto de nove intenções em português, com 1.170 frases de treino geradas a partir de 190 modelos de frase e 132 frases de teste escritas à mão. As regras seguem a PNRS e a CONAMA 275/2001, e o mapa simula 32 bairros de Maceió e dez pontos de coleta fictícios.
 
 \subsection{Visão computacional e aprendizado de máquina}
-Adotou-se aprendizado supervisionado. A MobileNetV2 pré-treinada foi usada como extratora congelada de características e comparada a um vetor clássico de cor, textura e forma, em sete combinações de classificadores. Os hiperparâmetros foram ajustados por validação cruzada de cinco dobras, apenas no treino.
+Adotou-se aprendizado supervisionado (Faceli \textit{et al.}, 2021). A MobileNetV2 pré-treinada foi usada como extratora congelada de características e comparada a um vetor clássico de cor, textura e forma, em sete combinações de classificadores. Os hiperparâmetros foram ajustados por validação cruzada de cinco dobras, apenas no treino.
 
 A seleção exigiu, além do maior F1-macro na validação, confiança calibrada e informativa, porque o modelo de maior F1, a SVM com calibração de Platt, gerava confianças que mal distinguiam acertos de erros. Os limiares de decisão, definidos na validação, foram 0,84 e 0,60. O OCR usa o Tesseract 5, e termos do rótulo como “PET” e “alumínio” são mapeados para materiais.
 
@@ -95,7 +110,7 @@ A seleção exigiu, além do maior F1-macro na validação, confiança calibrada
 O texto é normalizado e representado por TF-IDF de palavras e de caracteres; Naive Bayes, regressão logística e SVM linear foram comparados por validação cruzada. Intenções com probabilidade inferior a 0,35 levam o sistema a pedir reformulação, e material e bairro são extraídos por um léxico de 160 termos.
 
 \subsection{Agente, regras e busca}
-O motor de regras (22 regras) resolve o material nesta ordem: um material citado no texto prevalece; com confiança ≥ 0,84, aceita-se a imagem; abaixo disso, usa-se o material lido pelo OCR, se houver (fusão); entre 0,60 e 0,84, aceita-se a imagem e pede-se confirmação; abaixo de 0,60, o sistema pede outra foto. Para localizar o ponto de coleta, os estados são bairros, o objetivo é qualquer bairro com ponto que aceite o material, e a heurística é a menor distância em linha reta até um objetivo. Essa heurística é admissível e consistente, o que garante a otimalidade do A*.
+O motor de regras (22 regras) resolve o material nesta ordem: um material citado no texto prevalece; com confiança ≥ 0,84, aceita-se a imagem; abaixo disso, usa-se o material lido pelo OCR, se houver (fusão); entre 0,60 e 0,84, aceita-se a imagem e pede-se confirmação; abaixo de 0,60, o sistema pede outra foto. Para localizar o ponto de coleta, os estados são bairros, o objetivo é qualquer bairro com ponto que aceite o material, e a heurística é a menor distância em linha reta até um objetivo. Essa heurística é admissível e consistente, o que garante a otimalidade do A* (Russell; Norvig, 2022).
 
 \subsection{Ambiente, experimentos e métricas}
 A implementação usou Python 3.13, scikit-learn, OpenCV, Tesseract 5 e Streamlit, em CPU sem GPU, e o teste foi usado uma única vez por modelo. Os experimentos avaliaram modelos, calibração, robustez, OCR com fusão, busca e o sistema ponta a ponta, com acurácia, F1-macro, ECE, AUROC, nós expandidos, custo da rota e latência.
@@ -127,6 +142,7 @@ O ECE no teste foi de 0,044: 72,6\% das imagens tiveram confiança ≥ 0,84, com
 \centering
 \caption{Acurácia no teste sob perturbações das imagens}\label{fig:robustez}
 \includegraphics[width=0.75\textwidth]{visao_robustez.png}
+\fonte{Fonte: Elaborada pelos autores (2026).}
 \end{figure}
 
 \subsection{Reconhecimento de intenções}
