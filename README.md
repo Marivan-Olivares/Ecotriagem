@@ -4,7 +4,7 @@
 AFYA • UNIMA Maceió · Disciplina: Inteligência Artificial · Prof. Icaro Ferreira
 Tema escolhido: **Projeto B — Identificação e classificação de resíduos**
 
-> Artigo científico (Overleaf): **[inserir link de visualização do Overleaf]** · PDF: [`artigo/artigo.pdf`](artigo/artigo.pdf)
+> Artigo científico (Overleaf):(https://www.overleaf.com/project/6afe4ca23c10ba01d9fcc120/share#3f3572003869c83075b9d51ee68c730d673489724966dc53) · PDF: [`artigo/artigo.pdf`](artigo/artigo.pdf)
 
 ---
 
