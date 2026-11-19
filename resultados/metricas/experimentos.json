@@ -1,0 +1,351 @@
+{
+  "E1": {
+    "validacao": {
+      "acuracia": 0.8885941644562334,
+      "ece": 0.04884319363792438,
+      "faixas": {
+        "alta": {
+          "fracao": 0.7055702917771883,
+          "acuracia": 0.9511278195488722
+        },
+        "moderada": {
+          "fracao": 0.2625994694960212,
+          "acuracia": 0.7676767676767676
+        },
+        "baixa": {
+          "fracao": 0.03183023872679045,
+          "acuracia": 0.5
+        }
+      },
+      "curva": [
+        {
+          "limiar": 0.3,
+          "cobertura": 1.0,
+          "acuracia_aceitos": 0.8885941644562334
+        },
+        {
+          "limiar": 0.35,
+          "cobertura": 1.0,
+          "acuracia_aceitos": 0.8885941644562334
+        },
+        {
+          "limiar": 0.4,
+          "cobertura": 1.0,
+          "acuracia_aceitos": 0.8885941644562334
+        },
+        {
+          "limiar": 0.45,
+          "cobertura": 1.0,
+          "acuracia_aceitos": 0.8885941644562334
+        },
+        {
+          "limiar": 0.5,
+          "cobertura": 0.9893899204244032,
+          "acuracia_aceitos": 0.8927613941018767
+        },
+        {
+          "limiar": 0.55,
+          "cobertura": 0.9761273209549072,
+          "acuracia_aceitos": 0.8967391304347826
+        },
+        {
+          "limiar": 0.6,
+          "cobertura": 0.9681697612732095,
+          "acuracia_aceitos": 0.9013698630136986
+        },
+        {
+          "limiar": 0.65,
+          "cobertura": 0.9442970822281167,
+          "acuracia_aceitos": 0.9073033707865169
+        },
+        {
+          "limiar": 0.7,
+          "cobertura": 0.9336870026525199,
+          "acuracia_aceitos": 0.9119318181818182
+        },
+        {
+          "limiar": 0.75,
+          "cobertura": 0.8753315649867374,
+          "acuracia_aceitos": 0.9272727272727272
+        },
+        {
+          "limiar": 0.8,
+          "cobertura": 0.8063660477453581,
+          "acuracia_aceitos": 0.9473684210526315
+        },
+        {
+          "limiar": 0.85,
+          "cobertura": 0.6737400530503979,
+          "acuracia_aceitos": 0.952755905511811
+        },
+        {
+          "limiar": 0.9,
+          "cobertura": 0.4562334217506631,
+          "acuracia_aceitos": 0.9825581395348837
+        },
+        {
+          "limiar": 0.95,
+          "cobertura": 0.07692307692307693,
+          "acuracia_aceitos": 1.0
+        }
+      ],
+      "confianca_media_acertos": 0.8738512938555562,
+      "confianca_media_erros": 0.7498615718192461
+    },
+    "teste": {
+      "acuracia": 0.8891820580474934,
+      "ece": 0.04442307365035096,
+      "faixas": {
+        "alta": {
+          "fracao": 0.7255936675461742,
+          "acuracia": 0.9563636363636364
+        },
+        "moderada": {
+          "fracao": 0.22955145118733508,
+          "acuracia": 0.7701149425287356
+        },
+        "baixa": {
+          "fracao": 0.044854881266490766,
+          "acuracia": 0.4117647058823529
+        }
+      },
+      "curva": [
+        {
+          "limiar": 0.3,
+          "cobertura": 1.0,
+          "acuracia_aceitos": 0.8891820580474934
+        },
+        {
+          "limiar": 0.35,
+          "cobertura": 1.0,
+          "acuracia_aceitos": 0.8891820580474934
+        },
+        {
+          "limiar": 0.4,
+          "cobertura": 0.9947229551451188,
+          "acuracia_aceitos": 0.8885941644562334
+        },
+        {
+          "limiar": 0.45,
+          "cobertura": 0.9920844327176781,
+          "acuracia_aceitos": 0.8909574468085106
+        },
+        {
+          "limiar": 0.5,
+          "cobertura": 0.9868073878627969,
+          "acuracia_aceitos": 0.893048128342246
+        },
+        {
+          "limiar": 0.55,
+          "cobertura": 0.9709762532981531,
+          "acuracia_aceitos": 0.8994565217391305
+        },
+        {
+          "limiar": 0.6,
+          "cobertura": 0.9551451187335093,
+          "acuracia_aceitos": 0.9116022099447514
+        },
+        {
+          "limiar": 0.65,
+          "cobertura": 0.941952506596306,
+          "acuracia_aceitos": 0.9131652661064426
+        },
+        {
+          "limiar": 0.7,
+          "cobertura": 0.9155672823218998,
+          "acuracia_aceitos": 0.9221902017291066
+        },
+        {
+          "limiar": 0.75,
+          "cobertura": 0.8786279683377308,
+          "acuracia_aceitos": 0.9219219219219219
+        },
+        {
+          "limiar": 0.8,
+          "cobertura": 0.8179419525065963,
+          "acuracia_aceitos": 0.9387096774193548
+        },
+        {
+          "limiar": 0.85,
+          "cobertura": 0.683377308707124,
+          "acuracia_aceitos": 0.9575289575289575
+        },
+        {
+          "limiar": 0.9,
+          "cobertura": 0.46965699208443273,
+          "acuracia_aceitos": 0.9775280898876404
+        },
+        {
+          "limiar": 0.95,
+          "cobertura": 0.08970976253298153,
+          "acuracia_aceitos": 1.0
+        }
+      ],
+      "confianca_media_acertos": 0.8750170061795032,
+      "confianca_media_erros": 0.7403791123484775
+    }
+  },
+  "E2": {
+    "modelo_classico_comparado": "Clássico + Random Forest",
+    "acuracias": {
+      "original": {
+        "cnn": 0.8891820580474934,
+        "classico": 0.7915567282321899
+      },
+      "desfoque": {
+        "cnn": 0.8707124010554089,
+        "classico": 0.7308707124010554
+      },
+      "ruído gaussiano": {
+        "cnn": 0.8522427440633246,
+        "classico": 0.35883905013192613
+      },
+      "baixo brilho": {
+        "cnn": 0.8601583113456465,
+        "classico": 0.5303430079155673
+      },
+      "rotação 30°": {
+        "cnn": 0.8733509234828496,
+        "classico": 0.7282321899736148
+      },
+      "oclusão 25%": {
+        "cnn": 0.5936675461741425,
+        "classico": 0.6596306068601583
+      },
+      "JPEG q=15": {
+        "cnn": 0.8469656992084432,
+        "classico": 0.5013192612137203
+      }
+    }
+  },
+  "E3": {
+    "n": 359,
+    "cer_medio_recorte": 0.18511296812132466,
+    "acerto_exato_recorte": 0.7409470752089137,
+    "ocr_cena_detectou_material": 0.6601671309192201,
+    "ocr_cena_material_correto": 0.6573816155988857,
+    "precisao_material_ocr": 0.9957805907172996,
+    "falso_material_em_imagens_sem_rotulo": 0.0,
+    "acuracia_visual_com_rotulo": 0.8440111420612814,
+    "decisao_so_imagem": {
+      "acerto": 0.8272980501392758,
+      "abstencao": 0.052924791086350974,
+      "erro": 0.1197771587743732
+    },
+    "decisao_fusao": {
+      "acerto": 0.883008356545961,
+      "abstencao": 0.03064066852367688,
+      "erro": 0.08635097493036213
+    },
+    "casos_regra_R03": 64
+  },
+  "E4": {
+    "n_consultas": 256,
+    "n_bairros": 32,
+    "n_arestas": 62,
+    "resumo": {
+      "BFS": {
+        "expandidos_medio": 6.6602,
+        "pct_otimo": 0.6875,
+        "razao_custo_media": 1.153,
+        "razao_custo_max": 4.0624,
+        "tempo_medio_us": 5.5752
+      },
+      "Custo uniforme": {
+        "expandidos_medio": 6.2266,
+        "pct_otimo": 1.0,
+        "razao_custo_media": 1.0,
+        "razao_custo_max": 1.0,
+        "tempo_medio_us": 8.094
+      },
+      "Gulosa": {
+        "expandidos_medio": 2.5234,
+        "pct_otimo": 0.7969,
+        "razao_custo_media": 1.0241,
+        "razao_custo_max": 1.829,
+        "tempo_medio_us": 22.4821
+      },
+      "A*": {
+        "expandidos_medio": 3.4688,
+        "pct_otimo": 1.0,
+        "razao_custo_media": 1.0,
+        "razao_custo_max": 1.0,
+        "tempo_medio_us": 27.3723
+      }
+    },
+    "exemplo_ipioca_perigoso": {
+      "caminho": [
+        "Ipioca",
+        "Riacho Doce",
+        "Benedito Bentes",
+        "Tabuleiro do Martins"
+      ],
+      "custo_km": 26.35811064393722,
+      "expandidos": 7
+    }
+  },
+  "E5": {
+    "cnn": {
+      "ARI": 0.31831445811918446,
+      "NMI": 0.4143426450643834
+    },
+    "classica": {
+      "ARI": 0.14182773941748106,
+      "NMI": 0.17647556270392348
+    }
+  },
+  "E6": {
+    "n_cenarios": 379,
+    "n_perguntas_distintas": 24,
+    "intencao_correta": 0.8733509234828496,
+    "material_correto": 0.8707124010554089,
+    "abstencao_pediu_nova_foto": 0.044854881266490766,
+    "material_errado_sem_abstencao": 0.08443271767810026,
+    "lixeira_correta": 0.8865435356200527,
+    "acuracia_quando_respondeu": 0.9116022099447514,
+    "resposta_totalmente_correta": 0.7598944591029023,
+    "latencia_imagem_ms_mediana": 248.7,
+    "latencia_imagem_ms_p95": 467.01999999999964,
+    "latencia_pergunta_ms_mediana": 5.993843078613281
+  },
+  "E7": {
+    "exemplos_erros": [
+      {
+        "imagem": "dados/bruto/dataset-resized/cardboard/cardboard41.jpg",
+        "real": "cardboard",
+        "previsto": "paper",
+        "confianca": 0.6720517695364732
+      },
+      {
+        "imagem": "dados/bruto/dataset-resized/plastic/plastic455.jpg",
+        "real": "plastic",
+        "previsto": "paper",
+        "confianca": 0.8494305932222342
+      },
+      {
+        "imagem": "dados/bruto/dataset-resized/trash/trash78.jpg",
+        "real": "trash",
+        "previsto": "metal",
+        "confianca": 0.5706669466272392
+      },
+      {
+        "imagem": "dados/bruto/dataset-resized/glass/glass140.jpg",
+        "real": "glass",
+        "previsto": "metal",
+        "confianca": 0.7684146825005012
+      },
+      {
+        "imagem": "dados/bruto/dataset-resized/trash/trash73.jpg",
+        "real": "trash",
+        "previsto": "paper",
+        "confianca": 0.6967397558921141
+      },
+      {
+        "imagem": "dados/bruto/dataset-resized/plastic/plastic196.jpg",
+        "real": "plastic",
+        "previsto": "metal",
+        "confianca": 0.8843298084461881
+      }
+    ]
+  }
+}

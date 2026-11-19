@@ -1,0 +1,46 @@
+digraph EcoTriagem {
+  rankdir=LR;
+  graph [fontname="Helvetica", fontsize=11, nodesep=0.25, ranksep=0.35, pad=0.1];
+  node  [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, color="#555555", fillcolor="#ffffff", margin="0.08,0.05"];
+  edge  [color="#555555", arrowsize=0.6, fontname="Helvetica", fontsize=8];
+
+  usuario_img [label="Foto do\nresíduo", shape=oval, fillcolor="#f2cc8f"];
+  usuario_txt [label="Pergunta em\nportuguês", shape=oval, fillcolor="#f2cc8f"];
+
+  subgraph cluster_vc {
+    label="Visão Computacional + ML"; style="rounded,dashed"; color="#2a6f97"; fontcolor="#2a6f97";
+    pre   [label="Padronização\n(OpenCV)"];
+    cnn   [label="MobileNetV2 (ONNX)\nembedding 1280-d", fillcolor="#dbe9f2"];
+    svm   [label="SVM-RBF calibrado\n6 classes + confiança", fillcolor="#dbe9f2"];
+    ocr   [label="OCR do rótulo\n(Tesseract)", fillcolor="#dbe9f2"];
+  }
+
+  subgraph cluster_pln {
+    label="PLN + ML"; style="rounded,dashed"; color="#81b29a"; fontcolor="#3d7a5a";
+    norm  [label="Normalização\n(acentos, gírias)"];
+    int   [label="Intenção\nTF-IDF + SVM linear", fillcolor="#e3f1e9"];
+    ent   [label="Entidades\nmaterial, bairro (léxico)", fillcolor="#e3f1e9"];
+    faq   [label="Perguntas e respostas\n(busca TF-IDF)", fillcolor="#e3f1e9"];
+  }
+
+  subgraph cluster_dec {
+    label="Decisão (agente baseado em objetivos)"; style="rounded,dashed"; color="#e07a5f"; fontcolor="#c0583d";
+    estado [label="Estado / memória\n(última imagem, bairro)"];
+    regras [label="Motor de regras\n(fusão imagem+OCR+texto)", fillcolor="#f8e0d8"];
+    astar  [label="Busca A*\nponto de coleta", fillcolor="#f8e0d8"];
+    kb     [label="Base de conhecimento\n(CONAMA 275, PNRS)", shape=cylinder, fillcolor="#f4f1de"];
+  }
+
+  resposta [label="Resposta\ncontextualizada", shape=oval, fillcolor="#f2cc8f"];
+
+  usuario_img -> pre -> cnn -> svm -> estado;
+  pre -> ocr -> estado;
+  usuario_txt -> norm;
+  norm -> int; norm -> ent;
+  int -> regras; ent -> regras; ent -> estado;
+  estado -> regras;
+  kb -> regras;
+  regras -> astar [dir=both];
+  regras -> faq [dir=both];
+  regras -> resposta;
+}

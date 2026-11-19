@@ -1,0 +1,24 @@
+# dados brutos e cache (regenerados por scripts/baixar_dados.py e extrair_caracteristicas.py)
+dados/bruto/
+dados/processado/cache/
+modelos/*.onnx
+*.part
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+# latex
+artigo/*.aux
+artigo/*.log
+artigo/*.out
+artigo/*.bbl
+artigo/*.blg
+artigo/*.fls
+artigo/*.fdb_latexmk
+artigo/*.synctex.gz
+# segredos
+.env
+.streamlit/secrets.toml
+modelos/classificador_visual.joblib
+artigo/main.pdf

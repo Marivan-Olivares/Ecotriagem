@@ -1,0 +1,410 @@
+{
+  "modelos": {
+    "Clássico + SVM-RBF": {
+      "caracteristica": "classica",
+      "aumento": false,
+      "melhores_hiperparametros": {
+        "clf__estimator__C": 10
+      },
+      "cv5_f1_macro": 0.7128294534500552,
+      "val_acuracia": 0.7374005305039788,
+      "val_f1_macro": 0.7132713771696824,
+      "val_auroc_confianca": 0.640796453746094,
+      "val_ece": 0.13879652444305643,
+      "confianca_informativa": false,
+      "teste_acuracia": 0.7810026385224275,
+      "teste_f1_macro": 0.7734192776946593,
+      "teste_por_classe": {
+        "cardboard": {
+          "precision": 0.9090909090909091,
+          "recall": 0.819672131147541,
+          "f1-score": 0.8620689655172413,
+          "support": 61.0
+        },
+        "glass": {
+          "precision": 0.7142857142857143,
+          "recall": 0.7333333333333333,
+          "f1-score": 0.7236842105263158,
+          "support": 75.0
+        },
+        "metal": {
+          "precision": 0.746031746031746,
+          "recall": 0.7580645161290323,
+          "f1-score": 0.752,
+          "support": 62.0
+        },
+        "paper": {
+          "precision": 0.8144329896907216,
+          "recall": 0.8876404494382022,
+          "f1-score": 0.8494623655913979,
+          "support": 89.0
+        },
+        "plastic": {
+          "precision": 0.7162162162162162,
+          "recall": 0.7361111111111112,
+          "f1-score": 0.726027397260274,
+          "support": 72.0
+        },
+        "trash": {
+          "precision": 0.9230769230769231,
+          "recall": 0.6,
+          "f1-score": 0.7272727272727273,
+          "support": 20.0
+        }
+      },
+      "tempo_treino_s": 58.0141077041626,
+      "tempo_predicao_ms": 1.4149606543243245
+    },
+    "Clássico + Random Forest": {
+      "caracteristica": "classica",
+      "aumento": false,
+      "melhores_hiperparametros": {
+        "clf__max_features": 0.05
+      },
+      "cv5_f1_macro": 0.7593638908668054,
+      "val_acuracia": 0.7824933687002652,
+      "val_f1_macro": 0.7579474284722357,
+      "val_auroc_confianca": 0.8341463414634146,
+      "val_ece": 0.2960079575596818,
+      "confianca_informativa": false,
+      "teste_acuracia": 0.7915567282321899,
+      "teste_f1_macro": 0.7940290872464512,
+      "teste_por_classe": {
+        "cardboard": {
+          "precision": 0.9591836734693877,
+          "recall": 0.7704918032786885,
+          "f1-score": 0.8545454545454545,
+          "support": 61.0
+        },
+        "glass": {
+          "precision": 0.6883116883116883,
+          "recall": 0.7066666666666667,
+          "f1-score": 0.6973684210526315,
+          "support": 75.0
+        },
+        "metal": {
+          "precision": 0.7777777777777778,
+          "recall": 0.7903225806451613,
+          "f1-score": 0.784,
+          "support": 62.0
+        },
+        "paper": {
+          "precision": 0.845360824742268,
+          "recall": 0.9213483146067416,
+          "f1-score": 0.8817204301075269,
+          "support": 89.0
+        },
+        "plastic": {
+          "precision": 0.7162162162162162,
+          "recall": 0.7361111111111112,
+          "f1-score": 0.726027397260274,
+          "support": 72.0
+        },
+        "trash": {
+          "precision": 0.8421052631578947,
+          "recall": 0.8,
+          "f1-score": 0.8205128205128205,
+          "support": 20.0
+        }
+      },
+      "tempo_treino_s": 63.39158606529236,
+      "tempo_predicao_ms": 0.2402625386677091
+    },
+    "CNN + k-NN": {
+      "caracteristica": "cnn",
+      "aumento": false,
+      "melhores_hiperparametros": {
+        "clf__n_neighbors": 3
+      },
+      "cv5_f1_macro": 0.8498563213494237,
+      "val_acuracia": 0.8673740053050398,
+      "val_f1_macro": 0.8450114673668354,
+      "val_auroc_confianca": 0.8125076452599388,
+      "val_ece": 0.05159747101298783,
+      "confianca_informativa": false,
+      "teste_acuracia": 0.8839050131926122,
+      "teste_f1_macro": 0.858367631876085,
+      "teste_por_classe": {
+        "cardboard": {
+          "precision": 0.9661016949152542,
+          "recall": 0.9344262295081968,
+          "f1-score": 0.95,
+          "support": 61.0
+        },
+        "glass": {
+          "precision": 0.8701298701298701,
+          "recall": 0.8933333333333333,
+          "f1-score": 0.881578947368421,
+          "support": 75.0
+        },
+        "metal": {
+          "precision": 0.8548387096774194,
+          "recall": 0.8548387096774194,
+          "f1-score": 0.8548387096774194,
+          "support": 62.0
+        },
+        "paper": {
+          "precision": 0.8854166666666666,
+          "recall": 0.9550561797752809,
+          "f1-score": 0.918918918918919,
+          "support": 89.0
+        },
+        "plastic": {
+          "precision": 0.8714285714285714,
+          "recall": 0.8472222222222222,
+          "f1-score": 0.8591549295774648,
+          "support": 72.0
+        },
+        "trash": {
+          "precision": 0.8,
+          "recall": 0.6,
+          "f1-score": 0.6857142857142857,
+          "support": 20.0
+        }
+      },
+      "tempo_treino_s": 0.7770359516143799,
+      "tempo_predicao_ms": 0.10425703866141182
+    },
+    "CNN + SVM-RBF (Platt)": {
+      "caracteristica": "cnn",
+      "aumento": false,
+      "melhores_hiperparametros": {
+        "clf__estimator__C": 1
+      },
+      "cv5_f1_macro": 0.8534684940141333,
+      "val_acuracia": 0.8912466843501327,
+      "val_f1_macro": 0.8699574485909912,
+      "val_auroc_confianca": 0.6155632984901278,
+      "val_ece": 0.08416138508132023,
+      "confianca_informativa": false,
+      "teste_acuracia": 0.8839050131926122,
+      "teste_f1_macro": 0.8667763136252503,
+      "teste_por_classe": {
+        "cardboard": {
+          "precision": 0.9821428571428571,
+          "recall": 0.9016393442622951,
+          "f1-score": 0.9401709401709402,
+          "support": 61.0
+        },
+        "glass": {
+          "precision": 0.9402985074626866,
+          "recall": 0.84,
+          "f1-score": 0.8873239436619719,
+          "support": 75.0
+        },
+        "metal": {
+          "precision": 0.8055555555555556,
+          "recall": 0.9354838709677419,
+          "f1-score": 0.8656716417910447,
+          "support": 62.0
+        },
+        "paper": {
+          "precision": 0.8415841584158416,
+          "recall": 0.9550561797752809,
+          "f1-score": 0.8947368421052632,
+          "support": 89.0
+        },
+        "plastic": {
+          "precision": 0.9230769230769231,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8759124087591241,
+          "support": 72.0
+        },
+        "trash": {
+          "precision": 0.7777777777777778,
+          "recall": 0.7,
+          "f1-score": 0.7368421052631579,
+          "support": 20.0
+        }
+      },
+      "tempo_treino_s": 36.39927959442139,
+      "tempo_predicao_ms": 0.9442252456826508
+    },
+    "CNN + SVM-RBF (isotônica)": {
+      "caracteristica": "cnn",
+      "aumento": false,
+      "melhores_hiperparametros": {
+        "clf__estimator__C": 10
+      },
+      "cv5_f1_macro": 0.8528180109699205,
+      "val_acuracia": 0.8885941644562334,
+      "val_f1_macro": 0.8517695064413839,
+      "val_auroc_confianca": 0.8181236673773988,
+      "val_ece": 0.04884319363792438,
+      "confianca_informativa": true,
+      "teste_acuracia": 0.8891820580474934,
+      "teste_f1_macro": 0.858123504476898,
+      "teste_por_classe": {
+        "cardboard": {
+          "precision": 0.9821428571428571,
+          "recall": 0.9016393442622951,
+          "f1-score": 0.9401709401709402,
+          "support": 61.0
+        },
+        "glass": {
+          "precision": 0.9295774647887324,
+          "recall": 0.88,
+          "f1-score": 0.9041095890410958,
+          "support": 75.0
+        },
+        "metal": {
+          "precision": 0.7945205479452054,
+          "recall": 0.9354838709677419,
+          "f1-score": 0.8592592592592593,
+          "support": 62.0
+        },
+        "paper": {
+          "precision": 0.8613861386138614,
+          "recall": 0.9775280898876404,
+          "f1-score": 0.9157894736842105,
+          "support": 89.0
+        },
+        "plastic": {
+          "precision": 0.9375,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8823529411764706,
+          "support": 72.0
+        },
+        "trash": {
+          "precision": 0.7857142857142857,
+          "recall": 0.55,
+          "f1-score": 0.6470588235294118,
+          "support": 20.0
+        }
+      },
+      "tempo_treino_s": 36.76809048652649,
+      "tempo_predicao_ms": 3.7520928357644054
+    },
+    "CNN + Reg. Logística": {
+      "caracteristica": "cnn",
+      "aumento": false,
+      "melhores_hiperparametros": {
+        "clf__C": 0.01
+      },
+      "cv5_f1_macro": 0.8436175073642233,
+      "val_acuracia": 0.8620689655172413,
+      "val_f1_macro": 0.8406594321581232,
+      "val_auroc_confianca": 0.84,
+      "val_ece": 0.03456466599547893,
+      "confianca_informativa": true,
+      "teste_acuracia": 0.8680738786279684,
+      "teste_f1_macro": 0.8537948656369708,
+      "teste_por_classe": {
+        "cardboard": {
+          "precision": 0.9642857142857143,
+          "recall": 0.8852459016393442,
+          "f1-score": 0.9230769230769231,
+          "support": 61.0
+        },
+        "glass": {
+          "precision": 0.8970588235294118,
+          "recall": 0.8133333333333334,
+          "f1-score": 0.8531468531468531,
+          "support": 75.0
+        },
+        "metal": {
+          "precision": 0.7887323943661971,
+          "recall": 0.9032258064516129,
+          "f1-score": 0.8421052631578947,
+          "support": 62.0
+        },
+        "paper": {
+          "precision": 0.8645833333333334,
+          "recall": 0.9325842696629213,
+          "f1-score": 0.8972972972972973,
+          "support": 89.0
+        },
+        "plastic": {
+          "precision": 0.8823529411764706,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8571428571428571,
+          "support": 72.0
+        },
+        "trash": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1-score": 0.75,
+          "support": 20.0
+        }
+      },
+      "tempo_treino_s": 2.3354456424713135,
+      "tempo_predicao_ms": 0.004677860825150101
+    },
+    "CNN + Reg. Logística + aumento": {
+      "caracteristica": "cnn",
+      "aumento": true,
+      "melhores_hiperparametros": {
+        "clf__C": 0.1
+      },
+      "cv5_f1_macro": 0.8435187957745722,
+      "val_acuracia": 0.8567639257294429,
+      "val_f1_macro": 0.8247945889852005,
+      "val_auroc_confianca": 0.8447425753927301,
+      "val_ece": 0.053680507510663375,
+      "confianca_informativa": false,
+      "teste_acuracia": 0.8786279683377308,
+      "teste_f1_macro": 0.8664727195218878,
+      "teste_por_classe": {
+        "cardboard": {
+          "precision": 0.9661016949152542,
+          "recall": 0.9344262295081968,
+          "f1-score": 0.95,
+          "support": 61.0
+        },
+        "glass": {
+          "precision": 0.875,
+          "recall": 0.84,
+          "f1-score": 0.8571428571428571,
+          "support": 75.0
+        },
+        "metal": {
+          "precision": 0.7941176470588235,
+          "recall": 0.8709677419354839,
+          "f1-score": 0.8307692307692308,
+          "support": 62.0
+        },
+        "paper": {
+          "precision": 0.9021739130434783,
+          "recall": 0.9325842696629213,
+          "f1-score": 0.9171270718232044,
+          "support": 89.0
+        },
+        "plastic": {
+          "precision": 0.8955223880597015,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8633093525179856,
+          "support": 72.0
+        },
+        "trash": {
+          "precision": 0.7619047619047619,
+          "recall": 0.8,
+          "f1-score": 0.7804878048780488,
+          "support": 20.0
+        }
+      },
+      "tempo_treino_s": 3.584185838699341,
+      "tempo_predicao_ms": 0.005574138076217087
+    }
+  },
+  "selecionado": "CNN + SVM-RBF (isotônica)",
+  "maior_f1_sem_restricao": "CNN + SVM-RBF (Platt)",
+  "criterio": {
+    "auroc_min": 0.75,
+    "ece_max": 0.05
+  },
+  "limiares": {
+    "alta": 0.84,
+    "minima": 0.6,
+    "cobertura_alta_val": 0.7055702917771883,
+    "acuracia_alta_val": 0.9511278195488722,
+    "fracao_abaixo_minima_val": 0.03183023872679045,
+    "acuracia_abaixo_minima_val": 0.5
+  },
+  "tempo_extracao_cnn_ms": 12.508885437701723,
+  "tempo_extracao_classica_ms": 23.24039952143087,
+  "n": {
+    "treino": 1765,
+    "validacao": 377,
+    "teste": 379
+  }
+}

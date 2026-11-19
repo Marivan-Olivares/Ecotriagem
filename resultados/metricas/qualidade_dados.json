@@ -1,0 +1,77 @@
+{
+  "total_imagens_validas": 2527,
+  "imagens_descartadas": [],
+  "resolucoes": [
+    {
+      "largura": 512,
+      "altura": 384,
+      "n": 2521
+    }
+  ],
+  "limiar_hamming_dhash256": 40,
+  "limiar_mad": 5.0,
+  "pares_conflitantes": [
+    [
+      "dados/bruto/dataset-resized/glass/glass115.jpg",
+      "dados/bruto/dataset-resized/metal/metal91.jpg"
+    ],
+    [
+      "dados/bruto/dataset-resized/glass/glass176.jpg",
+      "dados/bruto/dataset-resized/plastic/plastic152.jpg"
+    ],
+    [
+      "dados/bruto/dataset-resized/glass/glass389.jpg",
+      "dados/bruto/dataset-resized/plastic/plastic332.jpg"
+    ]
+  ],
+  "imagens_removidas_rotulo_conflitante": [
+    "dados/bruto/dataset-resized/glass/glass115.jpg",
+    "dados/bruto/dataset-resized/glass/glass176.jpg",
+    "dados/bruto/dataset-resized/glass/glass389.jpg",
+    "dados/bruto/dataset-resized/metal/metal91.jpg",
+    "dados/bruto/dataset-resized/plastic/plastic152.jpg",
+    "dados/bruto/dataset-resized/plastic/plastic332.jpg"
+  ],
+  "total_imagens_apos_limpeza": 2521,
+  "pares_quase_duplicados": 15,
+  "pares_duplicados_com_classes_diferentes": 3,
+  "imagens_em_grupos_com_duplicata": 9,
+  "grupos": 2514,
+  "distribuicao": {
+    "cardboard": {
+      "treino": 282,
+      "validacao": 60,
+      "teste": 61
+    },
+    "glass": {
+      "treino": 349,
+      "validacao": 74,
+      "teste": 75
+    },
+    "metal": {
+      "treino": 286,
+      "validacao": 61,
+      "teste": 62
+    },
+    "paper": {
+      "treino": 416,
+      "validacao": 89,
+      "teste": 89
+    },
+    "plastic": {
+      "treino": 336,
+      "validacao": 72,
+      "teste": 72
+    },
+    "trash": {
+      "treino": 96,
+      "validacao": 21,
+      "teste": 20
+    },
+    "total": {
+      "treino": 1765,
+      "validacao": 377,
+      "teste": 379
+    }
+  }
+}

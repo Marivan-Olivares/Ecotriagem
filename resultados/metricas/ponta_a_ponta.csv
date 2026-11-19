@@ -1,0 +1,380 @@
+imagem,classe,pergunta,intencao_esperada,intencao_prevista,material_verdadeiro,material_decidido,confianca_visual,intencao_ok,material_ok,abstencao,lixeira_ok
+dados/bruto/dataset-resized/cardboard/cardboard10.jpg,cardboard,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,papelao,papelao,0.9470459822697157,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard106.jpg,cardboard,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,papelao,papelao,0.948190849466501,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard110.jpg,cardboard,Consegue me dizer de que é feito esse troço da foto?,identificar_material,identificar_material,papelao,papelao,0.9344213776715431,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard111.jpg,cardboard,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,papelao,papelao,0.9684790039093393,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard123.jpg,cardboard,reconheça o item da fotografia,identificar_material,fora_escopo,papelao,papelao,0.6798410241152791,False,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard135.jpg,cardboard,o objeto fotografado é de que material,identificar_material,identificar_material,papelao,papelao,0.9306440288915281,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard141.jpg,cardboard,o objeto fotografado é de que material,identificar_material,identificar_material,papelao,papelao,0.954651257861874,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard142.jpg,cardboard,que categoria de lixo o sistema reconheceu,identificar_material,identificar_material,papelao,papelao,0.7102966634105237,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard143.jpg,cardboard,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,papelao,papelao,0.7159064382450638,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard144.jpg,cardboard,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,papelao,papel,0.6547583366576111,True,False,False,True
+dados/bruto/dataset-resized/cardboard/cardboard147.jpg,cardboard,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,papelao,papelao,0.8741083917746784,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard148.jpg,cardboard,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,papelao,papelao,0.9431875158093697,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard155.jpg,cardboard,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,papelao,papelao,0.9512805043257726,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard163.jpg,cardboard,q coisa é essa ai na foto,identificar_material,identificar_material,papelao,papelao,0.6482262606290504,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard178.jpg,cardboard,esse material tem como ser reaproveitado?,reciclavel,reciclavel,papelao,papelao,0.8746972601612205,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard179.jpg,cardboard,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,papelao,papelao,0.9061955576652704,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard188.jpg,cardboard,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,papelao,papelao,0.923216883846416,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard191.jpg,cardboard,Consegue me dizer de que é feito esse troço da foto?,identificar_material,identificar_material,papelao,papelao,0.7569795017714602,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard214.jpg,cardboard,q coisa é essa ai na foto,identificar_material,identificar_material,papelao,papelao,0.9239588903525646,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard216.jpg,cardboard,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,papelao,papelao,0.7530970717315916,False,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard22.jpg,cardboard,o objeto fotografado é de que material,identificar_material,identificar_material,papelao,papelao,0.9280627160587193,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard244.jpg,cardboard,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,papelao,papelao,0.9513563330720858,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard245.jpg,cardboard,o item que fotografei é reciclável?,reciclavel,reciclavel,papelao,papelao,0.9453806739536452,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard249.jpg,cardboard,Consegue me dizer de que é feito esse troço da foto?,identificar_material,identificar_material,papelao,papelao,0.9565110309491711,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard256.jpg,cardboard,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,papelao,papelao,0.9435750688524506,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard269.jpg,cardboard,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,papelao,papelao,0.9605381461362029,False,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard271.jpg,cardboard,tempo de decomposição desse objeto,tempo_decomposicao,tempo_decomposicao,papelao,papelao,0.9500514968104999,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard28.jpg,cardboard,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,papelao,papelao,0.7736883579860075,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard284.jpg,cardboard,tempo de decomposição desse objeto,tempo_decomposicao,tempo_decomposicao,papelao,papelao,0.9483999305003223,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard286.jpg,cardboard,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,papelao,papelao,0.9548626628389613,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard290.jpg,cardboard,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,papelao,,0.5632096212794471,True,False,True,False
+dados/bruto/dataset-resized/cardboard/cardboard294.jpg,cardboard,o objeto fotografado é de que material,identificar_material,identificar_material,papelao,papelao,0.943763232793828,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard295.jpg,cardboard,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,papelao,papelao,0.9435750688524506,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard306.jpg,cardboard,esse material tem como ser reaproveitado?,reciclavel,reciclavel,papelao,papelao,0.954651257861874,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard310.jpg,cardboard,reconheça o item da fotografia,identificar_material,fora_escopo,papelao,papelao,0.943567998286517,False,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard326.jpg,cardboard,Consegue me dizer de que é feito esse troço da foto?,identificar_material,identificar_material,papelao,papelao,0.900908308202407,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard33.jpg,cardboard,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,papelao,papel,0.911424042574961,True,False,False,True
+dados/bruto/dataset-resized/cardboard/cardboard330.jpg,cardboard,tempo de decomposição desse objeto,tempo_decomposicao,tempo_decomposicao,papelao,papelao,0.8838325245626072,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard336.jpg,cardboard,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,papelao,papelao,0.9332152832344514,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard341.jpg,cardboard,Lixeira verde ou amarela pra esse objeto?,como_descartar,como_descartar,papelao,papelao,0.9515620099201255,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard342.jpg,cardboard,reconheça o item da fotografia,identificar_material,fora_escopo,papelao,papelao,0.9537057922951405,False,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard359.jpg,cardboard,que categoria de lixo o sistema reconheceu,identificar_material,identificar_material,papelao,papelao,0.6214704348266082,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard37.jpg,cardboard,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,papelao,papelao,0.9472541636014924,False,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard372.jpg,cardboard,Lixeira verde ou amarela pra esse objeto?,como_descartar,como_descartar,papelao,papelao,0.9700698302898827,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard377.jpg,cardboard,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,papelao,papelao,0.9459891677715433,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard382.jpg,cardboard,q coisa é essa ai na foto,identificar_material,identificar_material,papelao,papelao,0.9384177631684845,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard41.jpg,cardboard,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,papelao,papel,0.6720517695364732,True,False,False,True
+dados/bruto/dataset-resized/cardboard/cardboard43.jpg,cardboard,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,papelao,papelao,0.9452869397200363,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard46.jpg,cardboard,qual lixeira recebe o item da foto,como_descartar,como_descartar,papelao,papelao,0.9388498801082681,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard47.jpg,cardboard,qual lixeira recebe o item da foto,como_descartar,como_descartar,papelao,papelao,0.9408134739233267,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard49.jpg,cardboard,o item que fotografei é reciclável?,reciclavel,reciclavel,papelao,papelao,0.9483999305003223,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard5.jpg,cardboard,reconheça o item da fotografia,identificar_material,fora_escopo,papelao,papelao,0.951581222775363,False,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard6.jpg,cardboard,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,papelao,papelao,0.9501080027182922,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard60.jpg,cardboard,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,papelao,papelao,0.954651257861874,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard63.jpg,cardboard,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,papelao,papel,0.7841020043561207,True,False,False,True
+dados/bruto/dataset-resized/cardboard/cardboard67.jpg,cardboard,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,papelao,papelao,0.947474075015351,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard71.jpg,cardboard,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,papelao,papelao,0.9512805043257726,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard90.jpg,cardboard,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,papelao,papelao,0.9412145193675181,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard93.jpg,cardboard,q coisa é essa ai na foto,identificar_material,identificar_material,papelao,papelao,0.9574950177556854,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard97.jpg,cardboard,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,papelao,papelao,0.9551795104886731,True,True,False,True
+dados/bruto/dataset-resized/cardboard/cardboard99.jpg,cardboard,qual o jeito certo de jogar fora isso aqui,como_descartar,como_descartar,papelao,papel,0.8042143447411938,True,False,False,True
+dados/bruto/dataset-resized/glass/glass1.jpg,glass,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.8797113198224528,True,True,False,True
+dados/bruto/dataset-resized/glass/glass101.jpg,glass,o item que fotografei é reciclável?,reciclavel,reciclavel,vidro,vidro,0.8437141690009231,True,True,False,True
+dados/bruto/dataset-resized/glass/glass11.jpg,glass,qual lixeira recebe o item da foto,como_descartar,como_descartar,vidro,vidro,0.8947236604708367,True,True,False,True
+dados/bruto/dataset-resized/glass/glass112.jpg,glass,esse material tem como ser reaproveitado?,reciclavel,reciclavel,vidro,metal,0.7547767184109582,True,False,False,False
+dados/bruto/dataset-resized/glass/glass120.jpg,glass,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,vidro,vidro,0.8714406983480757,False,True,False,True
+dados/bruto/dataset-resized/glass/glass13.jpg,glass,tempo de decomposição desse objeto,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.8298192416153908,True,True,False,True
+dados/bruto/dataset-resized/glass/glass130.jpg,glass,q coisa é essa ai na foto,identificar_material,identificar_material,vidro,vidro,0.9323083900748952,True,True,False,True
+dados/bruto/dataset-resized/glass/glass132.jpg,glass,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,vidro,vidro,0.8480586241940358,True,True,False,True
+dados/bruto/dataset-resized/glass/glass133.jpg,glass,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.9169115152093686,True,True,False,True
+dados/bruto/dataset-resized/glass/glass134.jpg,glass,o objeto fotografado é de que material,identificar_material,identificar_material,vidro,vidro,0.6577557563414755,True,True,False,True
+dados/bruto/dataset-resized/glass/glass140.jpg,glass,qual o jeito certo de jogar fora isso aqui,como_descartar,como_descartar,vidro,metal,0.7684146825005012,True,False,False,False
+dados/bruto/dataset-resized/glass/glass143.jpg,glass,q coisa é essa ai na foto,identificar_material,identificar_material,vidro,vidro,0.8279022752125167,True,True,False,True
+dados/bruto/dataset-resized/glass/glass144.jpg,glass,o objeto fotografado é de que material,identificar_material,identificar_material,vidro,vidro,0.8260495388889139,True,True,False,True
+dados/bruto/dataset-resized/glass/glass154.jpg,glass,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,vidro,vidro,0.8625998004325346,True,True,False,True
+dados/bruto/dataset-resized/glass/glass160.jpg,glass,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,vidro,vidro,0.682067356393644,True,True,False,True
+dados/bruto/dataset-resized/glass/glass170.jpg,glass,reconheça o item da fotografia,identificar_material,fora_escopo,vidro,metal,0.9189449364949345,False,False,False,False
+dados/bruto/dataset-resized/glass/glass185.jpg,glass,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,vidro,vidro,0.8286709956438753,True,True,False,True
+dados/bruto/dataset-resized/glass/glass19.jpg,glass,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.9023107395112453,True,True,False,True
+dados/bruto/dataset-resized/glass/glass193.jpg,glass,qual lixeira recebe o item da foto,como_descartar,como_descartar,vidro,vidro,0.9017371227021641,True,True,False,True
+dados/bruto/dataset-resized/glass/glass196.jpg,glass,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,vidro,,0.5608851832066646,True,False,True,False
+dados/bruto/dataset-resized/glass/glass197.jpg,glass,qual lixeira recebe o item da foto,como_descartar,como_descartar,vidro,vidro,0.8727788081309076,True,True,False,True
+dados/bruto/dataset-resized/glass/glass198.jpg,glass,qual lixeira recebe o item da foto,como_descartar,como_descartar,vidro,vidro,0.843999467333503,True,True,False,True
+dados/bruto/dataset-resized/glass/glass201.jpg,glass,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,vidro,vidro,0.8074773657186247,False,True,False,True
+dados/bruto/dataset-resized/glass/glass212.jpg,glass,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.8916772066866503,True,True,False,True
+dados/bruto/dataset-resized/glass/glass214.jpg,glass,reconheça o item da fotografia,identificar_material,fora_escopo,vidro,vidro,0.8527177784546124,False,True,False,True
+dados/bruto/dataset-resized/glass/glass237.jpg,glass,tempo de decomposição desse objeto,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.898798652485682,True,True,False,True
+dados/bruto/dataset-resized/glass/glass242.jpg,glass,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.8477027226084415,True,True,False,True
+dados/bruto/dataset-resized/glass/glass249.jpg,glass,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.8558114539731582,True,True,False,True
+dados/bruto/dataset-resized/glass/glass250.jpg,glass,q coisa é essa ai na foto,identificar_material,identificar_material,vidro,vidro,0.8196010736508775,True,True,False,True
+dados/bruto/dataset-resized/glass/glass258.jpg,glass,o item que fotografei é reciclável?,reciclavel,reciclavel,vidro,vidro,0.9379583354333988,True,True,False,True
+dados/bruto/dataset-resized/glass/glass271.jpg,glass,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,vidro,,0.4909503008758356,True,False,True,False
+dados/bruto/dataset-resized/glass/glass273.jpg,glass,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,vidro,vidro,0.8223300677682849,True,True,False,True
+dados/bruto/dataset-resized/glass/glass277.jpg,glass,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,vidro,vidro,0.8641599798037877,True,True,False,True
+dados/bruto/dataset-resized/glass/glass278.jpg,glass,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.8436767607108294,True,True,False,True
+dados/bruto/dataset-resized/glass/glass283.jpg,glass,o objeto fotografado é de que material,identificar_material,identificar_material,vidro,metal,0.8847045784306143,True,False,False,False
+dados/bruto/dataset-resized/glass/glass302.jpg,glass,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,vidro,vidro,0.8419612994583605,True,True,False,True
+dados/bruto/dataset-resized/glass/glass304.jpg,glass,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,vidro,,0.38676857608743653,True,False,True,False
+dados/bruto/dataset-resized/glass/glass306.jpg,glass,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,vidro,vidro,0.7864847493343319,True,True,False,True
+dados/bruto/dataset-resized/glass/glass308.jpg,glass,reconheça o item da fotografia,identificar_material,fora_escopo,vidro,vidro,0.8454091730366361,False,True,False,True
+dados/bruto/dataset-resized/glass/glass310.jpg,glass,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.8524723665845698,True,True,False,True
+dados/bruto/dataset-resized/glass/glass312.jpg,glass,tempo de decomposição desse objeto,tempo_decomposicao,tempo_decomposicao,vidro,,0.5592732863652072,True,False,True,False
+dados/bruto/dataset-resized/glass/glass32.jpg,glass,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,vidro,vidro,0.840779049487103,True,True,False,True
+dados/bruto/dataset-resized/glass/glass320.jpg,glass,o objeto fotografado é de que material,identificar_material,identificar_material,vidro,vidro,0.9053796204103195,True,True,False,True
+dados/bruto/dataset-resized/glass/glass328.jpg,glass,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.8474531972605149,True,True,False,True
+dados/bruto/dataset-resized/glass/glass329.jpg,glass,Lixeira verde ou amarela pra esse objeto?,como_descartar,como_descartar,vidro,vidro,0.8570756161871884,True,True,False,True
+dados/bruto/dataset-resized/glass/glass330.jpg,glass,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,vidro,vidro,0.9066985681624511,True,True,False,True
+dados/bruto/dataset-resized/glass/glass331.jpg,glass,o objeto fotografado é de que material,identificar_material,identificar_material,vidro,vidro,0.8051691271139113,True,True,False,True
+dados/bruto/dataset-resized/glass/glass339.jpg,glass,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,vidro,vidro,0.8783697118505793,True,True,False,True
+dados/bruto/dataset-resized/glass/glass351.jpg,glass,Lixeira verde ou amarela pra esse objeto?,como_descartar,como_descartar,vidro,vidro,0.9053151258398587,True,True,False,True
+dados/bruto/dataset-resized/glass/glass357.jpg,glass,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,vidro,papel,0.8756505013870723,True,False,False,False
+dados/bruto/dataset-resized/glass/glass359.jpg,glass,reconheça o item da fotografia,identificar_material,fora_escopo,vidro,vidro,0.7947852042269105,False,True,False,True
+dados/bruto/dataset-resized/glass/glass379.jpg,glass,q coisa é essa ai na foto,identificar_material,identificar_material,vidro,vidro,0.7948900689180423,True,True,False,True
+dados/bruto/dataset-resized/glass/glass40.jpg,glass,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,vidro,vidro,0.8906402189133262,False,True,False,True
+dados/bruto/dataset-resized/glass/glass404.jpg,glass,esse material tem como ser reaproveitado?,reciclavel,reciclavel,vidro,vidro,0.8455817618592232,True,True,False,True
+dados/bruto/dataset-resized/glass/glass410.jpg,glass,tempo de decomposição desse objeto,tempo_decomposicao,tempo_decomposicao,vidro,metal,0.8991801219990402,True,False,False,False
+dados/bruto/dataset-resized/glass/glass419.jpg,glass,Lixeira verde ou amarela pra esse objeto?,como_descartar,como_descartar,vidro,vidro,0.8760289735234343,True,True,False,True
+dados/bruto/dataset-resized/glass/glass421.jpg,glass,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,vidro,vidro,0.8685476680513847,False,True,False,True
+dados/bruto/dataset-resized/glass/glass429.jpg,glass,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.8498444574457112,True,True,False,True
+dados/bruto/dataset-resized/glass/glass443.jpg,glass,o que devo fazer com o item antes da coleta seletiva,preparo_descarte,duvida_geral,vidro,metal,0.9004498717186401,False,False,False,False
+dados/bruto/dataset-resized/glass/glass45.jpg,glass,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,vidro,vidro,0.9349731490220362,True,True,False,True
+dados/bruto/dataset-resized/glass/glass458.jpg,glass,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.8119804311708949,True,True,False,True
+dados/bruto/dataset-resized/glass/glass464.jpg,glass,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,vidro,vidro,0.8329070637871316,True,True,False,True
+dados/bruto/dataset-resized/glass/glass465.jpg,glass,que categoria de lixo o sistema reconheceu,identificar_material,identificar_material,vidro,vidro,0.9263629141581701,True,True,False,True
+dados/bruto/dataset-resized/glass/glass476.jpg,glass,reconheça o item da fotografia,identificar_material,fora_escopo,vidro,vidro,0.8527177784546124,False,True,False,True
+dados/bruto/dataset-resized/glass/glass483.jpg,glass,que categoria de lixo o sistema reconheceu,identificar_material,identificar_material,vidro,plastico,0.7247143401100828,True,False,False,False
+dados/bruto/dataset-resized/glass/glass488.jpg,glass,o objeto fotografado é de que material,identificar_material,identificar_material,vidro,vidro,0.825393399354714,True,True,False,True
+dados/bruto/dataset-resized/glass/glass5.jpg,glass,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.6935385784138103,True,True,False,True
+dados/bruto/dataset-resized/glass/glass500.jpg,glass,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,vidro,vidro,0.8508133698977467,True,True,False,True
+dados/bruto/dataset-resized/glass/glass51.jpg,glass,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,vidro,vidro,0.825350914110904,True,True,False,True
+dados/bruto/dataset-resized/glass/glass56.jpg,glass,reconheça o item da fotografia,identificar_material,fora_escopo,vidro,vidro,0.9417014132656583,False,True,False,True
+dados/bruto/dataset-resized/glass/glass7.jpg,glass,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,vidro,vidro,0.86090336816874,True,True,False,True
+dados/bruto/dataset-resized/glass/glass76.jpg,glass,esse material tem como ser reaproveitado?,reciclavel,reciclavel,vidro,vidro,0.6250483043112389,True,True,False,True
+dados/bruto/dataset-resized/glass/glass79.jpg,glass,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,vidro,vidro,0.9012911902507434,True,True,False,True
+dados/bruto/dataset-resized/glass/glass84.jpg,glass,esse material tem como ser reaproveitado?,reciclavel,reciclavel,vidro,vidro,0.8269486686547733,True,True,False,True
+dados/bruto/dataset-resized/glass/glass95.jpg,glass,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,vidro,vidro,0.8748157255236751,True,True,False,True
+dados/bruto/dataset-resized/metal/metal1.jpg,metal,qual lixeira recebe o item da foto,como_descartar,como_descartar,metal,metal,0.9039455847007435,True,True,False,True
+dados/bruto/dataset-resized/metal/metal102.jpg,metal,o objeto fotografado é de que material,identificar_material,identificar_material,metal,metal,0.8278161790178824,True,True,False,True
+dados/bruto/dataset-resized/metal/metal103.jpg,metal,que categoria de lixo o sistema reconheceu,identificar_material,identificar_material,metal,metal,0.799969843515227,True,True,False,True
+dados/bruto/dataset-resized/metal/metal107.jpg,metal,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,metal,metal,0.9425070010745775,True,True,False,True
+dados/bruto/dataset-resized/metal/metal110.jpg,metal,o que devo fazer com o item antes da coleta seletiva,preparo_descarte,duvida_geral,metal,metal,0.9068782706875587,False,True,False,True
+dados/bruto/dataset-resized/metal/metal116.jpg,metal,q coisa é essa ai na foto,identificar_material,identificar_material,metal,metal,0.8920741691986599,True,True,False,True
+dados/bruto/dataset-resized/metal/metal121.jpg,metal,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,metal,metal,0.8468754931785458,True,True,False,True
+dados/bruto/dataset-resized/metal/metal13.jpg,metal,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,metal,metal,0.8924729611786016,True,True,False,True
+dados/bruto/dataset-resized/metal/metal136.jpg,metal,que categoria de lixo o sistema reconheceu,identificar_material,identificar_material,metal,metal,0.8943109984956292,True,True,False,True
+dados/bruto/dataset-resized/metal/metal140.jpg,metal,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,metal,metal,0.9337556962324592,True,True,False,True
+dados/bruto/dataset-resized/metal/metal152.jpg,metal,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,metal,metal,0.8260794172309993,True,True,False,True
+dados/bruto/dataset-resized/metal/metal160.jpg,metal,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,metal,metal,0.7115018012156351,True,True,False,True
+dados/bruto/dataset-resized/metal/metal161.jpg,metal,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,metal,metal,0.8630461204816899,True,True,False,True
+dados/bruto/dataset-resized/metal/metal166.jpg,metal,o item que fotografei é reciclável?,reciclavel,reciclavel,metal,metal,0.6486865253606844,True,True,False,True
+dados/bruto/dataset-resized/metal/metal173.jpg,metal,q coisa é essa ai na foto,identificar_material,identificar_material,metal,metal,0.7007715846799765,True,True,False,True
+dados/bruto/dataset-resized/metal/metal18.jpg,metal,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,metal,plastico,0.7807665646990177,True,False,False,False
+dados/bruto/dataset-resized/metal/metal183.jpg,metal,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,metal,vidro,0.8952484810287566,True,False,False,False
+dados/bruto/dataset-resized/metal/metal19.jpg,metal,o item que fotografei é reciclável?,reciclavel,reciclavel,metal,metal,0.7495500264712198,True,True,False,True
+dados/bruto/dataset-resized/metal/metal199.jpg,metal,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,metal,metal,0.9399051439455575,True,True,False,True
+dados/bruto/dataset-resized/metal/metal2.jpg,metal,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,metal,metal,0.8917325188866133,True,True,False,True
+dados/bruto/dataset-resized/metal/metal204.jpg,metal,reconheça o item da fotografia,identificar_material,fora_escopo,metal,metal,0.921338109994557,False,True,False,True
+dados/bruto/dataset-resized/metal/metal215.jpg,metal,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,metal,metal,0.9501431565675406,True,True,False,True
+dados/bruto/dataset-resized/metal/metal217.jpg,metal,Consegue me dizer de que é feito esse troço da foto?,identificar_material,identificar_material,metal,metal,0.9491664080730677,True,True,False,True
+dados/bruto/dataset-resized/metal/metal218.jpg,metal,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,metal,metal,0.8379943854172804,True,True,False,True
+dados/bruto/dataset-resized/metal/metal221.jpg,metal,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,metal,metal,0.9363993032677094,True,True,False,True
+dados/bruto/dataset-resized/metal/metal222.jpg,metal,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,metal,metal,0.914606979189508,True,True,False,True
+dados/bruto/dataset-resized/metal/metal25.jpg,metal,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,metal,metal,0.8885816539127571,True,True,False,True
+dados/bruto/dataset-resized/metal/metal253.jpg,metal,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,metal,metal,0.9068109385500511,True,True,False,True
+dados/bruto/dataset-resized/metal/metal254.jpg,metal,reconheça o item da fotografia,identificar_material,fora_escopo,metal,metal,0.9558169989340781,False,True,False,True
+dados/bruto/dataset-resized/metal/metal26.jpg,metal,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,metal,metal,0.945631301750858,True,True,False,True
+dados/bruto/dataset-resized/metal/metal260.jpg,metal,Lixeira verde ou amarela pra esse objeto?,como_descartar,como_descartar,metal,metal,0.9040317287195603,True,True,False,True
+dados/bruto/dataset-resized/metal/metal29.jpg,metal,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,metal,metal,0.9510349478046006,True,True,False,True
+dados/bruto/dataset-resized/metal/metal297.jpg,metal,qual o jeito certo de jogar fora isso aqui,como_descartar,como_descartar,metal,metal,0.9134967825677291,True,True,False,True
+dados/bruto/dataset-resized/metal/metal3.jpg,metal,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,metal,,0.5503382975579644,True,False,True,False
+dados/bruto/dataset-resized/metal/metal303.jpg,metal,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,metal,rejeito,0.8194548564810884,True,False,False,False
+dados/bruto/dataset-resized/metal/metal304.jpg,metal,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,metal,metal,0.9337600585012039,True,True,False,True
+dados/bruto/dataset-resized/metal/metal310.jpg,metal,Consegue me dizer de que é feito esse troço da foto?,identificar_material,identificar_material,metal,metal,0.6562323045337931,True,True,False,True
+dados/bruto/dataset-resized/metal/metal317.jpg,metal,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,metal,metal,0.9374163376322244,True,True,False,True
+dados/bruto/dataset-resized/metal/metal320.jpg,metal,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,metal,metal,0.9033605845808509,True,True,False,True
+dados/bruto/dataset-resized/metal/metal341.jpg,metal,reconheça o item da fotografia,identificar_material,fora_escopo,metal,metal,0.9230308613414625,False,True,False,True
+dados/bruto/dataset-resized/metal/metal344.jpg,metal,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,metal,metal,0.8243895828065353,True,True,False,True
+dados/bruto/dataset-resized/metal/metal348.jpg,metal,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,metal,metal,0.914903572220858,True,True,False,True
+dados/bruto/dataset-resized/metal/metal352.jpg,metal,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,metal,metal,0.8093869430693286,True,True,False,True
+dados/bruto/dataset-resized/metal/metal359.jpg,metal,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,metal,metal,0.9426582229281644,True,True,False,True
+dados/bruto/dataset-resized/metal/metal362.jpg,metal,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,metal,metal,0.9322876032799945,True,True,False,True
+dados/bruto/dataset-resized/metal/metal365.jpg,metal,qual o jeito certo de jogar fora isso aqui,como_descartar,como_descartar,metal,metal,0.906866124697452,True,True,False,True
+dados/bruto/dataset-resized/metal/metal369.jpg,metal,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,metal,metal,0.8980185573745922,True,True,False,True
+dados/bruto/dataset-resized/metal/metal373.jpg,metal,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,metal,metal,0.9493896015335992,True,True,False,True
+dados/bruto/dataset-resized/metal/metal382.jpg,metal,o item que fotografei é reciclável?,reciclavel,reciclavel,metal,metal,0.942910179774428,True,True,False,True
+dados/bruto/dataset-resized/metal/metal385.jpg,metal,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,metal,metal,0.8901707636954507,False,True,False,True
+dados/bruto/dataset-resized/metal/metal388.jpg,metal,que categoria de lixo o sistema reconheceu,identificar_material,identificar_material,metal,metal,0.8817671023935778,True,True,False,True
+dados/bruto/dataset-resized/metal/metal390.jpg,metal,qual lixeira recebe o item da foto,como_descartar,como_descartar,metal,metal,0.8876381409604077,True,True,False,True
+dados/bruto/dataset-resized/metal/metal392.jpg,metal,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,metal,metal,0.9679137029960805,True,True,False,True
+dados/bruto/dataset-resized/metal/metal401.jpg,metal,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,metal,metal,0.914606979189508,True,True,False,True
+dados/bruto/dataset-resized/metal/metal53.jpg,metal,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,metal,metal,0.8278429331204518,True,True,False,True
+dados/bruto/dataset-resized/metal/metal56.jpg,metal,Consegue me dizer de que é feito esse troço da foto?,identificar_material,identificar_material,metal,metal,0.9353212029285416,True,True,False,True
+dados/bruto/dataset-resized/metal/metal61.jpg,metal,o item que fotografei é reciclável?,reciclavel,reciclavel,metal,metal,0.8958618513928647,True,True,False,True
+dados/bruto/dataset-resized/metal/metal74.jpg,metal,Lixeira verde ou amarela pra esse objeto?,como_descartar,como_descartar,metal,metal,0.8639537699230857,True,True,False,True
+dados/bruto/dataset-resized/metal/metal86.jpg,metal,o que devo fazer com o item antes da coleta seletiva,preparo_descarte,duvida_geral,metal,metal,0.8940458137828594,False,True,False,True
+dados/bruto/dataset-resized/metal/metal89.jpg,metal,Consegue me dizer de que é feito esse troço da foto?,identificar_material,identificar_material,metal,metal,0.9532389236711719,True,True,False,True
+dados/bruto/dataset-resized/metal/metal9.jpg,metal,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,metal,metal,0.9348175630005461,True,True,False,True
+dados/bruto/dataset-resized/metal/metal93.jpg,metal,qual lixeira recebe o item da foto,como_descartar,como_descartar,metal,metal,0.8575405879339837,True,True,False,True
+dados/bruto/dataset-resized/paper/paper108.jpg,paper,qual o jeito certo de jogar fora isso aqui,como_descartar,como_descartar,papel,papel,0.8402543281474661,True,True,False,True
+dados/bruto/dataset-resized/paper/paper112.jpg,paper,o objeto fotografado é de que material,identificar_material,identificar_material,papel,papel,0.8621313014148532,True,True,False,True
+dados/bruto/dataset-resized/paper/paper113.jpg,paper,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,papel,papel,0.8357680699848757,True,True,False,True
+dados/bruto/dataset-resized/paper/paper120.jpg,paper,o objeto fotografado é de que material,identificar_material,identificar_material,papel,papel,0.9105035826407463,True,True,False,True
+dados/bruto/dataset-resized/paper/paper122.jpg,paper,esse material tem como ser reaproveitado?,reciclavel,reciclavel,papel,papel,0.84723797082127,True,True,False,True
+dados/bruto/dataset-resized/paper/paper129.jpg,paper,q coisa é essa ai na foto,identificar_material,identificar_material,papel,papel,0.9392290827527667,True,True,False,True
+dados/bruto/dataset-resized/paper/paper140.jpg,paper,q coisa é essa ai na foto,identificar_material,identificar_material,papel,papel,0.9451955824288035,True,True,False,True
+dados/bruto/dataset-resized/paper/paper148.jpg,paper,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,papel,papel,0.926044213800808,True,True,False,True
+dados/bruto/dataset-resized/paper/paper157.jpg,paper,o que devo fazer com o item antes da coleta seletiva,preparo_descarte,duvida_geral,papel,papel,0.8604466359525278,False,True,False,True
+dados/bruto/dataset-resized/paper/paper164.jpg,paper,q coisa é essa ai na foto,identificar_material,identificar_material,papel,papel,0.8940893705493658,True,True,False,True
+dados/bruto/dataset-resized/paper/paper176.jpg,paper,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,papel,papel,0.9185015123772832,True,True,False,True
+dados/bruto/dataset-resized/paper/paper179.jpg,paper,que categoria de lixo o sistema reconheceu,identificar_material,identificar_material,papel,papel,0.9183051463458594,True,True,False,True
+dados/bruto/dataset-resized/paper/paper190.jpg,paper,que categoria de lixo o sistema reconheceu,identificar_material,identificar_material,papel,papel,0.7956708752935812,True,True,False,True
+dados/bruto/dataset-resized/paper/paper191.jpg,paper,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,papel,papel,0.8757860095922478,True,True,False,True
+dados/bruto/dataset-resized/paper/paper196.jpg,paper,o que devo fazer com o item antes da coleta seletiva,preparo_descarte,duvida_geral,papel,papel,0.9342237807113067,False,True,False,True
+dados/bruto/dataset-resized/paper/paper20.jpg,paper,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,papel,papel,0.9251976899844404,True,True,False,True
+dados/bruto/dataset-resized/paper/paper203.jpg,paper,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,papel,papel,0.9263812284595245,True,True,False,True
+dados/bruto/dataset-resized/paper/paper215.jpg,paper,reconheça o item da fotografia,identificar_material,fora_escopo,papel,papel,0.9295302088855314,False,True,False,True
+dados/bruto/dataset-resized/paper/paper221.jpg,paper,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,papel,papel,0.9314755244755244,True,True,False,True
+dados/bruto/dataset-resized/paper/paper226.jpg,paper,o item que fotografei é reciclável?,reciclavel,reciclavel,papel,papel,0.7035984515215303,True,True,False,True
+dados/bruto/dataset-resized/paper/paper232.jpg,paper,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,papel,papel,0.9228810989869853,True,True,False,True
+dados/bruto/dataset-resized/paper/paper235.jpg,paper,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,papel,papel,0.9063038648840542,False,True,False,True
+dados/bruto/dataset-resized/paper/paper240.jpg,paper,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,papel,papel,0.9380898444120088,True,True,False,True
+dados/bruto/dataset-resized/paper/paper251.jpg,paper,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,papel,papel,0.7262016518743181,True,True,False,True
+dados/bruto/dataset-resized/paper/paper252.jpg,paper,tempo de decomposição desse objeto,tempo_decomposicao,tempo_decomposicao,papel,papel,0.9172931835517646,True,True,False,True
+dados/bruto/dataset-resized/paper/paper258.jpg,paper,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,papel,papel,0.8131378034466893,False,True,False,True
+dados/bruto/dataset-resized/paper/paper267.jpg,paper,tempo de decomposição desse objeto,tempo_decomposicao,tempo_decomposicao,papel,papel,0.886172776797174,True,True,False,True
+dados/bruto/dataset-resized/paper/paper272.jpg,paper,qual o jeito certo de jogar fora isso aqui,como_descartar,como_descartar,papel,papel,0.7061148400447784,True,True,False,True
+dados/bruto/dataset-resized/paper/paper292.jpg,paper,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,papel,papel,0.8942184635676694,True,True,False,True
+dados/bruto/dataset-resized/paper/paper294.jpg,paper,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,papel,papel,0.858878905717989,True,True,False,True
+dados/bruto/dataset-resized/paper/paper304.jpg,paper,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,papel,papel,0.9054807937598763,True,True,False,True
+dados/bruto/dataset-resized/paper/paper313.jpg,paper,qual lixeira recebe o item da foto,como_descartar,como_descartar,papel,papel,0.9007554876324001,True,True,False,True
+dados/bruto/dataset-resized/paper/paper318.jpg,paper,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,papel,papel,0.9241393981808386,True,True,False,True
+dados/bruto/dataset-resized/paper/paper320.jpg,paper,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,papel,papel,0.8733018658290341,True,True,False,True
+dados/bruto/dataset-resized/paper/paper323.jpg,paper,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,papel,papel,0.9176053875647611,True,True,False,True
+dados/bruto/dataset-resized/paper/paper338.jpg,paper,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,papel,papel,0.946617385669801,True,True,False,True
+dados/bruto/dataset-resized/paper/paper34.jpg,paper,o objeto fotografado é de que material,identificar_material,identificar_material,papel,papel,0.9185825738980192,True,True,False,True
+dados/bruto/dataset-resized/paper/paper340.jpg,paper,o objeto fotografado é de que material,identificar_material,identificar_material,papel,papel,0.9098406432941226,True,True,False,True
+dados/bruto/dataset-resized/paper/paper344.jpg,paper,q coisa é essa ai na foto,identificar_material,identificar_material,papel,papel,0.7616591693051824,True,True,False,True
+dados/bruto/dataset-resized/paper/paper346.jpg,paper,Lixeira verde ou amarela pra esse objeto?,como_descartar,como_descartar,papel,papel,0.7891581215512058,True,True,False,True
+dados/bruto/dataset-resized/paper/paper357.jpg,paper,Consegue me dizer de que é feito esse troço da foto?,identificar_material,identificar_material,papel,papel,0.9201293906608206,True,True,False,True
+dados/bruto/dataset-resized/paper/paper361.jpg,paper,esse material tem como ser reaproveitado?,reciclavel,reciclavel,papel,papel,0.9152233236594469,True,True,False,True
+dados/bruto/dataset-resized/paper/paper362.jpg,paper,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,papel,papel,0.9354978716830198,True,True,False,True
+dados/bruto/dataset-resized/paper/paper365.jpg,paper,o objeto fotografado é de que material,identificar_material,identificar_material,papel,papel,0.9306502747981025,True,True,False,True
+dados/bruto/dataset-resized/paper/paper378.jpg,paper,esse material tem como ser reaproveitado?,reciclavel,reciclavel,papel,papel,0.9293354796464041,True,True,False,True
+dados/bruto/dataset-resized/paper/paper379.jpg,paper,o objeto fotografado é de que material,identificar_material,identificar_material,papel,papel,0.926972322215423,True,True,False,True
+dados/bruto/dataset-resized/paper/paper38.jpg,paper,Consegue me dizer de que é feito esse troço da foto?,identificar_material,identificar_material,papel,papel,0.9403824523229455,True,True,False,True
+dados/bruto/dataset-resized/paper/paper385.jpg,paper,q coisa é essa ai na foto,identificar_material,identificar_material,papel,papel,0.7361887811539651,True,True,False,True
+dados/bruto/dataset-resized/paper/paper390.jpg,paper,tempo de decomposição desse objeto,tempo_decomposicao,tempo_decomposicao,papel,papel,0.8892034231797847,True,True,False,True
+dados/bruto/dataset-resized/paper/paper396.jpg,paper,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,papel,papel,0.9052941889082472,True,True,False,True
+dados/bruto/dataset-resized/paper/paper406.jpg,paper,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,papel,papel,0.928875563087388,True,True,False,True
+dados/bruto/dataset-resized/paper/paper412.jpg,paper,o objeto fotografado é de que material,identificar_material,identificar_material,papel,papel,0.9241393981808386,True,True,False,True
+dados/bruto/dataset-resized/paper/paper421.jpg,paper,q coisa é essa ai na foto,identificar_material,identificar_material,papel,papel,0.8807973693859559,True,True,False,True
+dados/bruto/dataset-resized/paper/paper425.jpg,paper,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,papel,papel,0.7323635710395557,True,True,False,True
+dados/bruto/dataset-resized/paper/paper427.jpg,paper,Lixeira verde ou amarela pra esse objeto?,como_descartar,como_descartar,papel,papel,0.9187823287568044,True,True,False,True
+dados/bruto/dataset-resized/paper/paper432.jpg,paper,q coisa é essa ai na foto,identificar_material,identificar_material,papel,papel,0.8652079627307743,True,True,False,True
+dados/bruto/dataset-resized/paper/paper433.jpg,paper,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,papel,papelao,0.8055021347827589,True,False,False,True
+dados/bruto/dataset-resized/paper/paper438.jpg,paper,o objeto fotografado é de que material,identificar_material,identificar_material,papel,papel,0.9481890857457584,True,True,False,True
+dados/bruto/dataset-resized/paper/paper449.jpg,paper,reconheça o item da fotografia,identificar_material,fora_escopo,papel,rejeito,0.9166714602353195,False,False,False,False
+dados/bruto/dataset-resized/paper/paper460.jpg,paper,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,papel,papel,0.9342237807113067,True,True,False,True
+dados/bruto/dataset-resized/paper/paper48.jpg,paper,o que devo fazer com o item antes da coleta seletiva,preparo_descarte,duvida_geral,papel,papel,0.9183784223845134,False,True,False,True
+dados/bruto/dataset-resized/paper/paper480.jpg,paper,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,papel,papel,0.9265519549074359,False,True,False,True
+dados/bruto/dataset-resized/paper/paper490.jpg,paper,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,papel,papel,0.8898204603121597,True,True,False,True
+dados/bruto/dataset-resized/paper/paper503.jpg,paper,que categoria de lixo o sistema reconheceu,identificar_material,identificar_material,papel,papel,0.9389070566875454,True,True,False,True
+dados/bruto/dataset-resized/paper/paper508.jpg,paper,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,papel,papel,0.8635477455358368,True,True,False,True
+dados/bruto/dataset-resized/paper/paper510.jpg,paper,esse material tem como ser reaproveitado?,reciclavel,reciclavel,papel,papel,0.8759762385899107,True,True,False,True
+dados/bruto/dataset-resized/paper/paper518.jpg,paper,esse material tem como ser reaproveitado?,reciclavel,reciclavel,papel,papel,0.9246305495388111,True,True,False,True
+dados/bruto/dataset-resized/paper/paper52.jpg,paper,o que devo fazer com o item antes da coleta seletiva,preparo_descarte,duvida_geral,papel,papel,0.9209678643275835,False,True,False,True
+dados/bruto/dataset-resized/paper/paper524.jpg,paper,o objeto fotografado é de que material,identificar_material,identificar_material,papel,papel,0.9218248568185385,True,True,False,True
+dados/bruto/dataset-resized/paper/paper529.jpg,paper,o que devo fazer com o item antes da coleta seletiva,preparo_descarte,duvida_geral,papel,papel,0.9176947150444261,False,True,False,True
+dados/bruto/dataset-resized/paper/paper530.jpg,paper,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,papel,papel,0.9452055492615294,True,True,False,True
+dados/bruto/dataset-resized/paper/paper532.jpg,paper,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,papel,papel,0.9441633829481845,False,True,False,True
+dados/bruto/dataset-resized/paper/paper535.jpg,paper,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,papel,papel,0.9485001689601888,True,True,False,True
+dados/bruto/dataset-resized/paper/paper54.jpg,paper,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,papel,papel,0.8505096977308823,True,True,False,True
+dados/bruto/dataset-resized/paper/paper544.jpg,paper,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,papel,papel,0.9228907965099914,True,True,False,True
+dados/bruto/dataset-resized/paper/paper546.jpg,paper,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,papel,papel,0.9338822289383462,True,True,False,True
+dados/bruto/dataset-resized/paper/paper547.jpg,paper,qual lixeira recebe o item da foto,como_descartar,como_descartar,papel,papel,0.8861613828995394,True,True,False,True
+dados/bruto/dataset-resized/paper/paper55.jpg,paper,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,papel,,0.39773925977356467,True,False,True,False
+dados/bruto/dataset-resized/paper/paper555.jpg,paper,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,papel,papel,0.911424042574961,True,True,False,True
+dados/bruto/dataset-resized/paper/paper576.jpg,paper,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,papel,papel,0.7811131482459444,True,True,False,True
+dados/bruto/dataset-resized/paper/paper587.jpg,paper,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,papel,papel,0.8212916981989185,True,True,False,True
+dados/bruto/dataset-resized/paper/paper589.jpg,paper,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,papel,papel,0.6983813774546543,True,True,False,True
+dados/bruto/dataset-resized/paper/paper59.jpg,paper,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,papel,papel,0.9255031289601373,True,True,False,True
+dados/bruto/dataset-resized/paper/paper590.jpg,paper,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,papel,,0.5343513638100867,True,False,True,False
+dados/bruto/dataset-resized/paper/paper61.jpg,paper,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,papel,papel,0.7941377807220104,True,True,False,True
+dados/bruto/dataset-resized/paper/paper82.jpg,paper,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,papel,papel,0.9098934692915467,True,True,False,True
+dados/bruto/dataset-resized/paper/paper87.jpg,paper,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,papel,papel,0.9113120057260821,True,True,False,True
+dados/bruto/dataset-resized/paper/paper93.jpg,paper,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,papel,papel,0.9290972563225655,True,True,False,True
+dados/bruto/dataset-resized/paper/paper94.jpg,paper,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,papel,papel,0.9088358092083586,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic1.jpg,plastic,Lixeira verde ou amarela pra esse objeto?,como_descartar,como_descartar,plastico,plastico,0.8306106989524322,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic102.jpg,plastic,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,plastico,plastico,0.9177357099487191,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic110.jpg,plastic,o objeto fotografado é de que material,identificar_material,identificar_material,plastico,plastico,0.9567611471554404,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic121.jpg,plastic,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,plastico,plastico,0.8254813703661688,False,True,False,True
+dados/bruto/dataset-resized/plastic/plastic13.jpg,plastic,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,plastico,plastico,0.9332487751263046,False,True,False,True
+dados/bruto/dataset-resized/plastic/plastic135.jpg,plastic,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,plastico,plastico,0.7214647363937627,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic151.jpg,plastic,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,plastico,plastico,0.9480063528990893,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic157.jpg,plastic,que categoria de lixo o sistema reconheceu,identificar_material,identificar_material,plastico,plastico,0.8843164239378485,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic159.jpg,plastic,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,plastico,plastico,0.9580886602507288,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic168.jpg,plastic,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,plastico,plastico,0.8847379691166205,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic177.jpg,plastic,reconheça o item da fotografia,identificar_material,fora_escopo,plastico,plastico,0.751923526882194,False,True,False,True
+dados/bruto/dataset-resized/plastic/plastic178.jpg,plastic,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,plastico,plastico,0.887460673043212,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic183.jpg,plastic,o objeto fotografado é de que material,identificar_material,identificar_material,plastico,plastico,0.7413808468981159,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic196.jpg,plastic,q coisa é essa ai na foto,identificar_material,identificar_material,plastico,metal,0.8843298084461881,True,False,False,False
+dados/bruto/dataset-resized/plastic/plastic197.jpg,plastic,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,plastico,plastico,0.9529059349849724,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic2.jpg,plastic,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,plastico,plastico,0.9171783387132978,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic207.jpg,plastic,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,plastico,plastico,0.8654991251036261,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic208.jpg,plastic,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,plastico,plastico,0.9004061737887208,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic212.jpg,plastic,isso aí polui por quanto tempo se eu jogar na rua,tempo_decomposicao,tempo_decomposicao,plastico,plastico,0.8848797311109159,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic216.jpg,plastic,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,plastico,plastico,0.7238268344355572,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic24.jpg,plastic,Consegue me dizer de que é feito esse troço da foto?,identificar_material,identificar_material,plastico,plastico,0.7520195427760195,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic246.jpg,plastic,q coisa é essa ai na foto,identificar_material,identificar_material,plastico,plastico,0.9541436396308687,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic247.jpg,plastic,o objeto fotografado é de que material,identificar_material,identificar_material,plastico,plastico,0.9544468597278133,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic257.jpg,plastic,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,plastico,plastico,0.9410905528768257,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic26.jpg,plastic,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,plastico,plastico,0.9425497177121477,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic265.jpg,plastic,o que devo fazer com o item antes da coleta seletiva,preparo_descarte,duvida_geral,plastico,plastico,0.8732282506625276,False,True,False,True
+dados/bruto/dataset-resized/plastic/plastic275.jpg,plastic,o que devo fazer com o item antes da coleta seletiva,preparo_descarte,duvida_geral,plastico,plastico,0.87498302899868,False,True,False,True
+dados/bruto/dataset-resized/plastic/plastic286.jpg,plastic,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,plastico,plastico,0.8693078062158882,False,True,False,True
+dados/bruto/dataset-resized/plastic/plastic296.jpg,plastic,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,plastico,plastico,0.8906001541922344,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic30.jpg,plastic,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,plastico,plastico,0.9019617032507747,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic301.jpg,plastic,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,plastico,plastico,0.9444287905169944,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic307.jpg,plastic,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,plastico,,0.5311471477866859,True,False,True,False
+dados/bruto/dataset-resized/plastic/plastic308.jpg,plastic,Consegue me dizer de que é feito esse troço da foto?,identificar_material,identificar_material,plastico,plastico,0.9558797704492445,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic317.jpg,plastic,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,plastico,plastico,0.9432782755643171,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic32.jpg,plastic,reconheça o item da fotografia,identificar_material,fora_escopo,plastico,plastico,0.9223054442185594,False,True,False,True
+dados/bruto/dataset-resized/plastic/plastic330.jpg,plastic,é obrigatório limpar a embalagem antes?,preparo_descarte,preparo_descarte,plastico,plastico,0.9544156334398932,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic335.jpg,plastic,qual o jeito certo de jogar fora isso aqui,como_descartar,como_descartar,plastico,plastico,0.8937442451316959,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic338.jpg,plastic,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,plastico,plastico,0.796173688543423,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic34.jpg,plastic,tempo de decomposição desse objeto,tempo_decomposicao,tempo_decomposicao,plastico,plastico,0.890294651126802,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic349.jpg,plastic,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,plastico,plastico,0.9512308110180834,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic356.jpg,plastic,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,plastico,metal,0.6638268262679274,True,False,False,False
+dados/bruto/dataset-resized/plastic/plastic359.jpg,plastic,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,plastico,plastico,0.8608795052854852,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic360.jpg,plastic,tempo de decomposição desse objeto,tempo_decomposicao,tempo_decomposicao,plastico,plastico,0.9434263892225433,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic364.jpg,plastic,o que devo fazer com o item antes da coleta seletiva,preparo_descarte,duvida_geral,plastico,,0.5243894915084749,False,False,True,False
+dados/bruto/dataset-resized/plastic/plastic365.jpg,plastic,que categoria de lixo o sistema reconheceu,identificar_material,identificar_material,plastico,plastico,0.9432915763518228,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic376.jpg,plastic,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,plastico,plastico,0.8375170048664258,False,True,False,True
+dados/bruto/dataset-resized/plastic/plastic378.jpg,plastic,qual o jeito certo de jogar fora isso aqui,como_descartar,como_descartar,plastico,plastico,0.884847864917281,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic380.jpg,plastic,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,plastico,plastico,0.9063670420911292,False,True,False,True
+dados/bruto/dataset-resized/plastic/plastic394.jpg,plastic,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,plastico,plastico,0.8091877596608826,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic4.jpg,plastic,esse material tem como ser reaproveitado?,reciclavel,reciclavel,plastico,,0.4732459355319139,True,False,True,False
+dados/bruto/dataset-resized/plastic/plastic406.jpg,plastic,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,plastico,plastico,0.8583314683180132,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic415.jpg,plastic,tampinha de garrafa pode ser reciclada?,reciclavel,reciclavel,plastico,plastico,0.8755224530410375,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic425.jpg,plastic,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,plastico,plastico,0.8521154199808384,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic437.jpg,plastic,isso faz mal pro meio ambiente se for pro lixão?,tempo_decomposicao,tempo_decomposicao,plastico,plastico,0.9536743912464092,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic441.jpg,plastic,Lixeira verde ou amarela pra esse objeto?,como_descartar,como_descartar,plastico,vidro,0.8218193871883439,True,False,False,False
+dados/bruto/dataset-resized/plastic/plastic455.jpg,plastic,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,plastico,papel,0.8494305932222342,True,False,False,False
+dados/bruto/dataset-resized/plastic/plastic457.jpg,plastic,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,plastico,metal,0.7995573748300255,True,False,False,False
+dados/bruto/dataset-resized/plastic/plastic463.jpg,plastic,esse material tem como ser reaproveitado?,reciclavel,reciclavel,plastico,plastico,0.7789601001282753,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic467.jpg,plastic,o que devo fazer com o item antes da coleta seletiva,preparo_descarte,duvida_geral,plastico,metal,0.8533925929470254,False,False,False,False
+dados/bruto/dataset-resized/plastic/plastic474.jpg,plastic,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,plastico,plastico,0.909073997047166,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic480.jpg,plastic,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,plastico,,0.5298309959313892,True,False,True,False
+dados/bruto/dataset-resized/plastic/plastic482.jpg,plastic,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,plastico,rejeito,0.6237102973424782,True,False,False,False
+dados/bruto/dataset-resized/plastic/plastic51.jpg,plastic,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,plastico,plastico,0.8365426305822397,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic60.jpg,plastic,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,plastico,plastico,0.897523092409282,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic62.jpg,plastic,q coisa é essa ai na foto,identificar_material,identificar_material,plastico,plastico,0.8443598461394453,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic67.jpg,plastic,"olha essa embalagem, consegue classificar?",identificar_material,identificar_material,plastico,plastico,0.9718930410575141,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic85.jpg,plastic,q coisa é essa ai na foto,identificar_material,identificar_material,plastico,plastico,0.9087645337638872,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic86.jpg,plastic,o item que fotografei é reciclável?,reciclavel,reciclavel,plastico,vidro,0.7930386871849417,True,False,False,False
+dados/bruto/dataset-resized/plastic/plastic87.jpg,plastic,q coisa é essa ai na foto,identificar_material,identificar_material,plastico,papel,0.8076994773690943,True,False,False,False
+dados/bruto/dataset-resized/plastic/plastic9.jpg,plastic,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,plastico,plastico,0.863226331015103,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic96.jpg,plastic,o objeto fotografado é de que material,identificar_material,identificar_material,plastico,plastico,0.8299973285377169,True,True,False,True
+dados/bruto/dataset-resized/plastic/plastic97.jpg,plastic,Antes de jogar a garrafa fora eu preciso lavar?,preparo_descarte,preparo_descarte,plastico,plastico,0.9403515214823426,True,True,False,True
+dados/bruto/dataset-resized/trash/trash101.jpg,trash,identifique o tipo de resíduo na imagem anexada,identificar_material,identificar_material,rejeito,rejeito,0.9193607441681451,True,True,False,True
+dados/bruto/dataset-resized/trash/trash102.jpg,trash,esse material tem como ser reaproveitado?,reciclavel,reciclavel,rejeito,,0.5116606459944165,True,False,True,False
+dados/bruto/dataset-resized/trash/trash104.jpg,trash,o objeto fotografado é de que material,identificar_material,identificar_material,rejeito,rejeito,0.9497064087113811,True,True,False,True
+dados/bruto/dataset-resized/trash/trash106.jpg,trash,esse material tem como ser reaproveitado?,reciclavel,reciclavel,rejeito,rejeito,0.9479917032154367,True,True,False,True
+dados/bruto/dataset-resized/trash/trash107.jpg,trash,o item que fotografei é reciclável?,reciclavel,reciclavel,rejeito,plastico,0.8567045442109219,True,False,False,False
+dados/bruto/dataset-resized/trash/trash108.jpg,trash,"mandei uma imagem, qual material vc reconheceu nela",identificar_material,identificar_material,rejeito,papel,0.8118901414396007,True,False,False,False
+dados/bruto/dataset-resized/trash/trash122.jpg,trash,o item que fotografei é reciclável?,reciclavel,reciclavel,rejeito,rejeito,0.8982996047222759,True,True,False,True
+dados/bruto/dataset-resized/trash/trash126.jpg,trash,q coisa é essa ai na foto,identificar_material,identificar_material,rejeito,,0.41420321437612706,True,False,True,False
+dados/bruto/dataset-resized/trash/trash31.jpg,trash,Preciso tirar a tampinha?,preparo_descarte,preparo_descarte,rejeito,rejeito,0.9202361802146732,True,True,False,True
+dados/bruto/dataset-resized/trash/trash47.jpg,trash,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,rejeito,papel,0.8334112714405976,True,False,False,False
+dados/bruto/dataset-resized/trash/trash55.jpg,trash,esse material tem como ser reaproveitado?,reciclavel,reciclavel,rejeito,rejeito,0.9728986637389999,True,True,False,True
+dados/bruto/dataset-resized/trash/trash59.jpg,trash,esse material tem como ser reaproveitado?,reciclavel,reciclavel,rejeito,rejeito,0.8905200629720831,True,True,False,True
+dados/bruto/dataset-resized/trash/trash66.jpg,trash,esse negócio da foto tem reciclagem?,reciclavel,reciclavel,rejeito,,0.5406919159334519,True,False,True,False
+dados/bruto/dataset-resized/trash/trash68.jpg,trash,Lixeira verde ou amarela pra esse objeto?,como_descartar,como_descartar,rejeito,,0.5516550105209417,True,False,True,False
+dados/bruto/dataset-resized/trash/trash73.jpg,trash,reconheça o item da fotografia,identificar_material,fora_escopo,rejeito,papel,0.6967397558921141,False,False,False,False
+dados/bruto/dataset-resized/trash/trash74.jpg,trash,Qual o resultado da análise da imagem?,identificar_material,fora_escopo,rejeito,rejeito,0.9353637028119209,False,True,False,True
+dados/bruto/dataset-resized/trash/trash75.jpg,trash,o material da foto demora quanto tempo pra degradar,tempo_decomposicao,tempo_decomposicao,rejeito,rejeito,0.8695579947149309,True,True,False,True
+dados/bruto/dataset-resized/trash/trash78.jpg,trash,tempo de decomposição desse objeto,tempo_decomposicao,tempo_decomposicao,rejeito,,0.5706669466272392,True,False,True,False
+dados/bruto/dataset-resized/trash/trash83.jpg,trash,Lixeira verde ou amarela pra esse objeto?,como_descartar,como_descartar,rejeito,rejeito,0.9094603084588793,True,True,False,True
+dados/bruto/dataset-resized/trash/trash85.jpg,trash,o objeto fotografado é de que material,identificar_material,identificar_material,rejeito,papel,0.7502256022358083,True,False,False,False

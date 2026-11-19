@@ -1,0 +1,569 @@
+[
+  {
+    "imagem": "dados/bruto/dataset-resized/plastic/plastic1.jpg",
+    "classe_real": "plastic",
+    "dialogo": [
+      {
+        "pergunta": "que material é esse?",
+        "resposta": "Confiança moderada: parece plástico (83%) ou vidro (16%). Confirme o material se puder.\n\nO material é **plástico** (fonte: imagem (83%, confiança moderada)). Probabilidades: plástico 83%, vidro 16%, metal 0%.",
+        "intencao": "identificar_material",
+        "conf_intencao": 0.9763664715963086,
+        "material": "plastico",
+        "origem_material": "imagem (83%, confiança moderada)",
+        "bairro": null,
+        "regras_disparadas": [
+          "R04: confiança entre 60% e 84% -> aceitar e pedir confirmação",
+          "R10: consultar a base de conhecimento do material",
+          "R20: intenção identificar_material -> informar material e probabilidades"
+        ],
+        "rota": null
+      },
+      {
+        "pergunta": "onde eu jogo isso?",
+        "resposta": "Descarte **plástico** na lixeira **vermelha** da coleta seletiva.",
+        "intencao": "como_descartar",
+        "conf_intencao": 0.9708230705972272,
+        "material": "plastico",
+        "origem_material": "imagem (83%, confiança moderada)",
+        "bairro": null,
+        "regras_disparadas": [
+          "R04: confiança entre 60% e 84% -> aceitar e pedir confirmação",
+          "R10: consultar a base de conhecimento do material",
+          "R21: intenção como_descartar -> lixeira (cores CONAMA 275/2001)"
+        ],
+        "rota": null
+      },
+      {
+        "pergunta": "precisa tirar a tampa?",
+        "resposta": "Antes de descartar plástico: enxágue embalagens com resto de alimento; retire a tampa (ela também é reciclável) e amasse garrafas PET; embalagens metalizadas (salgadinho) e plástico muito sujo geralmente não são aceitos.",
+        "intencao": "preparo_descarte",
+        "conf_intencao": 0.9742353536187423,
+        "material": "plastico",
+        "origem_material": "imagem (83%, confiança moderada)",
+        "bairro": null,
+        "regras_disparadas": [
+          "R04: confiança entre 60% e 84% -> aceitar e pedir confirmação",
+          "R10: consultar a base de conhecimento do material",
+          "R23: intenção preparo_descarte -> cuidados antes do descarte"
+        ],
+        "rota": null
+      },
+      {
+        "pergunta": "tem ponto de coleta perto?",
+        "resposta": "Em qual bairro de Maceió você está? Assim calculo a rota até o ponto de coleta mais próximo que aceita esse material.",
+        "intencao": "ponto_coleta",
+        "conf_intencao": 0.9829492898086796,
+        "material": "plastico",
+        "origem_material": "imagem (83%, confiança moderada)",
+        "bairro": null,
+        "regras_disparadas": [
+          "R04: confiança entre 60% e 84% -> aceitar e pedir confirmação",
+          "R10: consultar a base de conhecimento do material",
+          "R25a: ponto_coleta sem bairro conhecido -> perguntar bairro"
+        ],
+        "rota": null
+      },
+      {
+        "pergunta": "moro na Ponta Verde",
+        "resposta": "Há ponto de coleta no seu próprio bairro (Ponta Verde): PEV Orla Ponta Verde (fictício).\n\nObs.: pontos de coleta do mapa são fictícios (cenário de demonstração).",
+        "intencao": "ponto_coleta",
+        "conf_intencao": 0.6374793280683191,
+        "material": "plastico",
+        "origem_material": "imagem (83%, confiança moderada)",
+        "bairro": "Ponta Verde",
+        "regras_disparadas": [
+          "R04: confiança entre 60% e 84% -> aceitar e pedir confirmação",
+          "R10: consultar a base de conhecimento do material",
+          "R25c: ponto_coleta com bairro -> busca A* até ponto que aceita o material"
+        ],
+        "rota": {
+          "caminho": [
+            "Ponta Verde"
+          ],
+          "custo_km": 0,
+          "destino": "Ponta Verde",
+          "pontos": [
+            "PEV Orla Ponta Verde (fictício)"
+          ],
+          "nos_expandidos": 1
+        }
+      }
+    ],
+    "analise": {
+      "classe": "plastic",
+      "material": "plastico",
+      "confianca": 0.8306106989524322,
+      "top": [
+        [
+          "plastico",
+          0.8306106989524322
+        ],
+        [
+          "vidro",
+          0.16024913336883634
+        ],
+        [
+          "metal",
+          0.0037724294200502176
+        ],
+        [
+          "papel",
+          0.003261243232349953
+        ],
+        [
+          "rejeito",
+          0.002106495026331188
+        ],
+        [
+          "papelao",
+          0.0
+        ]
+      ],
+      "ocr_texto": "",
+      "ocr_materiais": [],
+      "tempo_total_ms": 192.2
+    }
+  },
+  {
+    "imagem": "dados/bruto/dataset-resized/glass/glass101.jpg",
+    "classe_real": "glass",
+    "dialogo": [
+      {
+        "pergunta": "isso é reciclável?",
+        "resposta": "Sim, **vidro** é reciclável: separe para a coleta seletiva (lixeira verde).",
+        "intencao": "reciclavel",
+        "conf_intencao": 0.9791189184255831,
+        "material": "vidro",
+        "origem_material": "imagem (84% de confiança)",
+        "bairro": null,
+        "regras_disparadas": [
+          "R02: imagem com confiança >= 84% -> aceitar classe visual",
+          "R10: consultar a base de conhecimento do material",
+          "R22: intenção reciclavel -> reciclável ou não"
+        ],
+        "rota": null
+      },
+      {
+        "pergunta": "quanto tempo leva pra se decompor?",
+        "resposta": "Tempo de decomposição estimado de vidro: tempo indeterminado (milhares de anos). (Valores aproximados; dependem muito do ambiente.)",
+        "intencao": "tempo_decomposicao",
+        "conf_intencao": 0.9706257691934559,
+        "material": "vidro",
+        "origem_material": "imagem (84% de confiança)",
+        "bairro": null,
+        "regras_disparadas": [
+          "R02: imagem com confiança >= 84% -> aceitar classe visual",
+          "R10: consultar a base de conhecimento do material",
+          "R24: intenção tempo_decomposicao -> impacto/decomposição"
+        ],
+        "rota": null
+      },
+      {
+        "pergunta": "onde fica o ponto de coleta mais próximo do Benedito Bentes?",
+        "resposta": "Ponto de coleta mais próximo para vidro saindo de Benedito Bentes: **Ecoponto Tabuleiro (fictício)** (Tabuleiro do Martins), cerca de 5,9 km. Trajeto: Benedito Bentes → Tabuleiro do Martins. (Busca A*, 2 bairros expandidos.)\n\nObs.: pontos de coleta do mapa são fictícios (cenário de demonstração).",
+        "intencao": "ponto_coleta",
+        "conf_intencao": 0.9804564116800651,
+        "material": "vidro",
+        "origem_material": "imagem (84% de confiança)",
+        "bairro": "Benedito Bentes",
+        "regras_disparadas": [
+          "R02: imagem com confiança >= 84% -> aceitar classe visual",
+          "R10: consultar a base de conhecimento do material",
+          "R25c: ponto_coleta com bairro -> busca A* até ponto que aceita o material"
+        ],
+        "rota": {
+          "caminho": [
+            "Benedito Bentes",
+            "Tabuleiro do Martins"
+          ],
+          "custo_km": 5.85,
+          "destino": "Tabuleiro do Martins",
+          "pontos": [
+            "Ecoponto Tabuleiro (fictício)"
+          ],
+          "nos_expandidos": 2
+        }
+      }
+    ],
+    "analise": {
+      "classe": "glass",
+      "material": "vidro",
+      "confianca": 0.8437141690009231,
+      "top": [
+        [
+          "vidro",
+          0.8437141690009231
+        ],
+        [
+          "plastico",
+          0.13708300912517057
+        ],
+        [
+          "metal",
+          0.017209122818974867
+        ],
+        [
+          "rejeito",
+          0.001993699054931532
+        ],
+        [
+          "papelao",
+          0.0
+        ],
+        [
+          "papel",
+          0.0
+        ]
+      ],
+      "ocr_texto": "",
+      "ocr_materiais": [],
+      "tempo_total_ms": 197.5
+    }
+  },
+  {
+    "imagem": "dados/bruto/dataset-resized/cardboard/cardboard110.jpg",
+    "classe_real": "cardboard",
+    "dialogo": [
+      {
+        "pergunta": "qual lixeira uso pra isso?",
+        "resposta": "Descarte **papelão** na lixeira **azul** da coleta seletiva.",
+        "intencao": "como_descartar",
+        "conf_intencao": 0.9454870626426587,
+        "material": "papelao",
+        "origem_material": "imagem (93% de confiança)",
+        "bairro": null,
+        "regras_disparadas": [
+          "R02: imagem com confiança >= 84% -> aceitar classe visual",
+          "R10: consultar a base de conhecimento do material",
+          "R21: intenção como_descartar -> lixeira (cores CONAMA 275/2001)"
+        ],
+        "rota": null
+      },
+      {
+        "pergunta": "devo desmontar a caixa?",
+        "resposta": "Antes de descartar papelão: desmonte e achate as caixas para ocupar menos espaço; remova restos de comida, isopor e excesso de fita adesiva; mantenha seco: papelão molhado perde valor de reciclagem.",
+        "intencao": "preparo_descarte",
+        "conf_intencao": 0.9616658695906899,
+        "material": "papelao",
+        "origem_material": "texto da pergunta",
+        "bairro": null,
+        "regras_disparadas": [
+          "R00: material citado no texto prevalece (referência explícita do usuário)",
+          "R10: consultar a base de conhecimento do material",
+          "R23: intenção preparo_descarte -> cuidados antes do descarte"
+        ],
+        "rota": null
+      }
+    ],
+    "analise": {
+      "classe": "cardboard",
+      "material": "papelao",
+      "confianca": 0.9344213776715431,
+      "top": [
+        [
+          "papelao",
+          0.9344213776715431
+        ],
+        [
+          "vidro",
+          0.030293443231711216
+        ],
+        [
+          "plastico",
+          0.02348133359567267
+        ],
+        [
+          "rejeito",
+          0.005908627773771838
+        ],
+        [
+          "metal",
+          0.004130924601037088
+        ],
+        [
+          "papel",
+          0.0017642931262639185
+        ]
+      ],
+      "ocr_texto": "te Ta pe at",
+      "ocr_materiais": [],
+      "tempo_total_ms": 410.4
+    }
+  },
+  {
+    "imagem": "dados/bruto/dataset-resized/metal/metal107.jpg",
+    "classe_real": "metal",
+    "dialogo": [
+      {
+        "pergunta": "o que é isso na foto?",
+        "resposta": "O material é **metal** (fonte: imagem (94% de confiança)). Probabilidades: metal 94%, vidro 4%, plástico 1%.",
+        "intencao": "identificar_material",
+        "conf_intencao": 0.9597432163866388,
+        "material": "metal",
+        "origem_material": "imagem (94% de confiança)",
+        "bairro": null,
+        "regras_disparadas": [
+          "R02: imagem com confiança >= 84% -> aceitar classe visual",
+          "R10: consultar a base de conhecimento do material",
+          "R20: intenção identificar_material -> informar material e probabilidades"
+        ],
+        "rota": null
+      },
+      {
+        "pergunta": "dá pra reciclar?",
+        "resposta": "Sim, **metal** é reciclável: separe para a coleta seletiva (lixeira amarela).",
+        "intencao": "reciclavel",
+        "conf_intencao": 0.9742950756783539,
+        "material": "metal",
+        "origem_material": "imagem (94% de confiança)",
+        "bairro": null,
+        "regras_disparadas": [
+          "R02: imagem com confiança >= 84% -> aceitar classe visual",
+          "R10: consultar a base de conhecimento do material",
+          "R22: intenção reciclavel -> reciclável ou não"
+        ],
+        "rota": null
+      }
+    ],
+    "analise": {
+      "classe": "metal",
+      "material": "metal",
+      "confianca": 0.9425070010745775,
+      "top": [
+        [
+          "metal",
+          0.9425070010745775
+        ],
+        [
+          "vidro",
+          0.03632405965447748
+        ],
+        [
+          "plastico",
+          0.010917110825215954
+        ],
+        [
+          "papel",
+          0.010251828445729064
+        ],
+        [
+          "papelao",
+          0.0
+        ],
+        [
+          "rejeito",
+          0.0
+        ]
+      ],
+      "ocr_texto": "NZ",
+      "ocr_materiais": [],
+      "tempo_total_ms": 259.5
+    }
+  },
+  {
+    "imagem": "dados/bruto/dataset-resized/trash/trash101.jpg",
+    "classe_real": "trash",
+    "dialogo": [
+      {
+        "pergunta": "onde descarto?",
+        "resposta": "**Rejeito (não reciclável)** vai na lixeira **cinza** e segue pela coleta regular, separado dos recicláveis.",
+        "intencao": "como_descartar",
+        "conf_intencao": 0.5889716970608813,
+        "material": "rejeito",
+        "origem_material": "imagem (92% de confiança)",
+        "bairro": null,
+        "regras_disparadas": [
+          "R02: imagem com confiança >= 84% -> aceitar classe visual",
+          "R10: consultar a base de conhecimento do material",
+          "R21: intenção como_descartar -> lixeira (cores CONAMA 275/2001)"
+        ],
+        "rota": null
+      },
+      {
+        "pergunta": "tem ecoponto pra isso no Farol?",
+        "resposta": "Rejeito (não reciclável) não precisa ir a ecoponto: entregue na coleta regular de lixo, em saco fechado.",
+        "intencao": "ponto_coleta",
+        "conf_intencao": 0.8550908179684512,
+        "material": "rejeito",
+        "origem_material": "imagem (92% de confiança)",
+        "bairro": "Farol",
+        "regras_disparadas": [
+          "R02: imagem com confiança >= 84% -> aceitar classe visual",
+          "R10: consultar a base de conhecimento do material",
+          "R25b: ponto_coleta para rejeito -> coleta regular (sem busca)"
+        ],
+        "rota": null
+      }
+    ],
+    "analise": {
+      "classe": "trash",
+      "material": "rejeito",
+      "confianca": 0.9193607441681451,
+      "top": [
+        [
+          "rejeito",
+          0.9193607441681451
+        ],
+        [
+          "papel",
+          0.046113140111773046
+        ],
+        [
+          "papelao",
+          0.02601310919136964
+        ],
+        [
+          "metal",
+          0.008513006528712331
+        ],
+        [
+          "vidro",
+          0.0
+        ],
+        [
+          "plastico",
+          0.0
+        ]
+      ],
+      "ocr_texto": "",
+      "ocr_materiais": [],
+      "tempo_total_ms": 223.6
+    }
+  },
+  {
+    "imagem": "dados/bruto/dataset-resized/paper/paper122.jpg",
+    "classe_real": "paper",
+    "dialogo": [
+      {
+        "pergunta": "e se fosse uma pilha velha, onde levo? estou no Pinheiro",
+        "resposta": "Atenção: na imagem eu reconheci papel (85%), mas você mencionou resíduo perigoso (pilha, bateria, lâmpada, eletrônico). Vou responder sobre resíduo perigoso (pilha, bateria, lâmpada, eletrônico).\n\nPonto de coleta mais próximo para resíduo perigoso (pilha, bateria, lâmpada, eletrônico) saindo de Pinheiro: **Ponto de logística reversa Centro (fictício)** (Centro), cerca de 4,7 km. Trajeto: Pinheiro → Farol → Centro. (Busca A*, 4 bairros expandidos.)\n\nObs.: pontos de coleta do mapa são fictícios (cenário de demonstração).",
+        "intencao": "ponto_coleta",
+        "conf_intencao": 0.9402828235899472,
+        "material": "perigoso",
+        "origem_material": "texto da pergunta",
+        "bairro": "Pinheiro",
+        "regras_disparadas": [
+          "R00: material citado no texto prevalece (referência explícita do usuário)",
+          "R01: conflito entre texto e imagem de alta confiança -> avisar",
+          "R10: consultar a base de conhecimento do material",
+          "R25c: ponto_coleta com bairro -> busca A* até ponto que aceita o material"
+        ],
+        "rota": {
+          "caminho": [
+            "Pinheiro",
+            "Farol",
+            "Centro"
+          ],
+          "custo_km": 4.67,
+          "destino": "Centro",
+          "pontos": [
+            "Ponto de logística reversa Centro (fictício)"
+          ],
+          "nos_expandidos": 4
+        }
+      }
+    ],
+    "analise": {
+      "classe": "paper",
+      "material": "papel",
+      "confianca": 0.84723797082127,
+      "top": [
+        [
+          "papel",
+          0.84723797082127
+        ],
+        [
+          "rejeito",
+          0.07690958846436254
+        ],
+        [
+          "plastico",
+          0.07229320148098314
+        ],
+        [
+          "papelao",
+          0.0035592392333844017
+        ],
+        [
+          "vidro",
+          0.0
+        ],
+        [
+          "metal",
+          0.0
+        ]
+      ],
+      "ocr_texto": "4, tt, to,",
+      "ocr_materiais": [],
+      "tempo_total_ms": 310.1
+    }
+  },
+  {
+    "imagem": null,
+    "classe_real": null,
+    "dialogo": [
+      {
+        "pergunta": "oi",
+        "resposta": "Olá! Sou o EcoTriagem. Envie a foto de um resíduo e pergunte, por exemplo: 'que material é esse?', 'onde descarto?', 'precisa lavar?', 'é reciclável?' ou 'qual o ponto de coleta mais perto do Farol?'.",
+        "intencao": "saudacao_ajuda",
+        "conf_intencao": 0.9435772409617392,
+        "material": null,
+        "origem_material": null,
+        "bairro": null,
+        "regras_disparadas": [
+          "R27: intenção saudacao_ajuda -> apresentar o assistente"
+        ],
+        "rota": null
+      },
+      {
+        "pergunta": "o que é logística reversa?",
+        "resposta": "Logística reversa é o retorno de produtos após o uso ao fabricante ou comerciante para reaproveitamento ou destinação adequada. É obrigatória para pilhas, baterias, lâmpadas, eletroeletrônicos, pneus, óleos lubrificantes e agrotóxicos (Lei 12.305/2010, art. 33).",
+        "intencao": "duvida_geral",
+        "conf_intencao": 0.9521985783672979,
+        "material": null,
+        "origem_material": null,
+        "bairro": null,
+        "regras_disparadas": [
+          "R26: intenção duvida_geral -> perguntas e respostas (busca na FAQ)"
+        ],
+        "rota": null
+      },
+      {
+        "pergunta": "qual a previsão do tempo amanhã?",
+        "resposta": "Desculpe, só consigo ajudar com identificação e descarte de resíduos.",
+        "intencao": "fora_escopo",
+        "conf_intencao": 0.9636579656786575,
+        "material": null,
+        "origem_material": null,
+        "bairro": null,
+        "regras_disparadas": [
+          "R28: intenção fora_escopo -> recusar educadamente"
+        ],
+        "rota": null
+      },
+      {
+        "pergunta": "onde fica o ecoponto mais perto do Jacintinho?",
+        "resposta": "Há ponto de coleta no seu próprio bairro (Jacintinho): **Ecoponto Jacintinho (fictício)**.\n\nEnvie a foto do resíduo para eu conferir se o ponto aceita o material.\n\nObs.: pontos de coleta do mapa são fictícios (cenário de demonstração).",
+        "intencao": "ponto_coleta",
+        "conf_intencao": 0.9763441313386348,
+        "material": null,
+        "origem_material": null,
+        "bairro": "Jacintinho",
+        "regras_disparadas": [
+          "R25d: ponto_coleta com bairro e sem material -> A* até qualquer ponto"
+        ],
+        "rota": {
+          "caminho": [
+            "Jacintinho"
+          ],
+          "custo_km": 0,
+          "destino": "Jacintinho",
+          "pontos": [
+            "Ecoponto Jacintinho (fictício)"
+          ],
+          "nos_expandidos": 1
+        }
+      }
+    ]
+  }
+]

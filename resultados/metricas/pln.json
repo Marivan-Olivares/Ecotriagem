@@ -1,0 +1,396 @@
+{
+  "n_treino": 1170,
+  "n_teste_manual": 132,
+  "modelos": {
+    "naive_bayes": {
+      "cv5_acuracia": 0.9735042735042735,
+      "cv5_f1_macro": 0.9734932695818829,
+      "teste_acuracia": 0.7272727272727273,
+      "teste_f1_macro": 0.7213484728289762
+    },
+    "naive_bayes+char": {
+      "cv5_acuracia": 0.9803418803418803,
+      "cv5_f1_macro": 0.9803698074101028,
+      "teste_acuracia": 0.8257575757575758,
+      "teste_f1_macro": 0.817762394480487
+    },
+    "regressao_logistica": {
+      "cv5_acuracia": 0.9811965811965812,
+      "cv5_f1_macro": 0.9812860699883673,
+      "teste_acuracia": 0.7878787878787878,
+      "teste_f1_macro": 0.7754033221526667
+    },
+    "regressao_logistica+char": {
+      "cv5_acuracia": 0.9914529914529915,
+      "cv5_f1_macro": 0.991448619196826,
+      "teste_acuracia": 0.8939393939393939,
+      "teste_f1_macro": 0.8899624172844418
+    },
+    "svm_linear": {
+      "cv5_acuracia": 0.982051282051282,
+      "cv5_f1_macro": 0.9821197417421854,
+      "teste_acuracia": 0.7727272727272727,
+      "teste_f1_macro": 0.7617635970750332
+    },
+    "svm_linear+char": {
+      "cv5_acuracia": 0.9914529914529915,
+      "cv5_f1_macro": 0.9914653821913713,
+      "teste_acuracia": 0.8560606060606061,
+      "teste_f1_macro": 0.8524653946876168
+    }
+  },
+  "selecionado": "svm_linear+char",
+  "teste_selecionado": {
+    "acuracia": 0.8560606060606061,
+    "f1_macro": 0.8524653946876168,
+    "f1_ponderado": 0.8541581762793884,
+    "por_classe": {
+      "identificar_material": {
+        "precision": 0.9285714285714286,
+        "recall": 0.8125,
+        "f1-score": 0.8666666666666667,
+        "support": 16.0
+      },
+      "como_descartar": {
+        "precision": 0.8235294117647058,
+        "recall": 0.875,
+        "f1-score": 0.8484848484848485,
+        "support": 16.0
+      },
+      "ponto_coleta": {
+        "precision": 0.8421052631578947,
+        "recall": 1.0,
+        "f1-score": 0.9142857142857143,
+        "support": 16.0
+      },
+      "preparo_descarte": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1-score": 0.8888888888888888,
+        "support": 15.0
+      },
+      "reciclavel": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1-score": 0.8571428571428571,
+        "support": 15.0
+      },
+      "tempo_decomposicao": {
+        "precision": 0.9285714285714286,
+        "recall": 0.9285714285714286,
+        "f1-score": 0.9285714285714286,
+        "support": 14.0
+      },
+      "duvida_geral": {
+        "precision": 0.8461538461538461,
+        "recall": 0.7857142857142857,
+        "f1-score": 0.8148148148148148,
+        "support": 14.0
+      },
+      "saudacao_ajuda": {
+        "precision": 0.8333333333333334,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.8333333333333334,
+        "support": 12.0
+      },
+      "fora_escopo": {
+        "precision": 0.8181818181818182,
+        "recall": 0.6428571428571429,
+        "f1-score": 0.72,
+        "support": 14.0
+      }
+    }
+  },
+  "confianca_media_acertos": 0.8378472433906973,
+  "confianca_media_erros": 0.5406567549105453,
+  "erros_teste": [
+    {
+      "texto": "a garrafa da foto é de vidro mesmo?",
+      "esperado": "identificar_material",
+      "previsto": "reciclavel",
+      "confianca": 0.3239515914176564
+    },
+    {
+      "texto": "Qual o resultado da análise da imagem?",
+      "esperado": "identificar_material",
+      "previsto": "fora_escopo",
+      "confianca": 0.8962050912630598
+    },
+    {
+      "texto": "reconheça o item da fotografia",
+      "esperado": "identificar_material",
+      "previsto": "fora_escopo",
+      "confianca": 0.5682264421230174
+    },
+    {
+      "texto": "posso botar a fralda junto com os recicláveis?",
+      "esperado": "como_descartar",
+      "previsto": "reciclavel",
+      "confianca": 0.6649742590207042
+    },
+    {
+      "texto": "onde boto o papel de presente rasgado",
+      "esperado": "como_descartar",
+      "previsto": "ponto_coleta",
+      "confianca": 0.6286884302217327
+    },
+    {
+      "texto": "o pote de iogurte tem que estar limpo pra reciclar?",
+      "esperado": "preparo_descarte",
+      "previsto": "reciclavel",
+      "confianca": 0.5094824241534294
+    },
+    {
+      "texto": "posso entregar a lata com restinho de comida",
+      "esperado": "preparo_descarte",
+      "previsto": "ponto_coleta",
+      "confianca": 0.4584745877503649
+    },
+    {
+      "texto": "o que devo fazer com o item antes da coleta seletiva",
+      "esperado": "preparo_descarte",
+      "previsto": "duvida_geral",
+      "confianca": 0.5389664830759926
+    },
+    {
+      "texto": "pilha jogada no lixo comum contamina o que?",
+      "esperado": "tempo_decomposicao",
+      "previsto": "como_descartar",
+      "confianca": 0.5561091676620691
+    },
+    {
+      "texto": "o que eu faço com medicamento vencido?",
+      "esperado": "duvida_geral",
+      "previsto": "como_descartar",
+      "confianca": 0.4609177165831976
+    },
+    {
+      "texto": "quais cores de lixeira existem e o que vai em cada uma",
+      "esperado": "duvida_geral",
+      "previsto": "como_descartar",
+      "confianca": 0.6881054835997629
+    },
+    {
+      "texto": "o que esse app faz?",
+      "esperado": "duvida_geral",
+      "previsto": "identificar_material",
+      "confianca": 0.6373465729028693
+    },
+    {
+      "texto": "o que dá pra perguntar aqui?",
+      "esperado": "saudacao_ajuda",
+      "previsto": "reciclavel",
+      "confianca": 0.32757048107821124
+    },
+    {
+      "texto": "me explica o que você consegue fazer",
+      "esperado": "saudacao_ajuda",
+      "previsto": "duvida_geral",
+      "confianca": 0.45695327993324586
+    },
+    {
+      "texto": "vai chover hoje em Maceió?",
+      "esperado": "fora_escopo",
+      "previsto": "ponto_coleta",
+      "confianca": 0.4351431191776244
+    },
+    {
+      "texto": "me ensina a fazer tapioca",
+      "esperado": "fora_escopo",
+      "previsto": "saudacao_ajuda",
+      "confianca": 0.49888716496073543
+    },
+    {
+      "texto": "traduz hello para português",
+      "esperado": "fora_escopo",
+      "previsto": "reciclavel",
+      "confianca": 0.45230235354924
+    },
+    {
+      "texto": "me indica uma série boa",
+      "esperado": "fora_escopo",
+      "previsto": "saudacao_ajuda",
+      "confianca": 0.7730379734813126
+    },
+    {
+      "texto": "qual é a raiz quadrada de 144",
+      "esperado": "fora_escopo",
+      "previsto": "tempo_decomposicao",
+      "confianca": 0.39713572134613784
+    }
+  ],
+  "entidades": {
+    "material": {
+      "precisao": 0.9682539682539683,
+      "revocacao": 0.9838709677419355,
+      "f1": 0.976,
+      "acertos": 61,
+      "previstos": 63,
+      "esperados": 62
+    },
+    "bairro": {
+      "precisao": 1.0,
+      "revocacao": 1.0,
+      "f1": 1.0,
+      "acertos": 16,
+      "previstos": 16,
+      "esperados": 16
+    },
+    "erros": [
+      {
+        "texto": "a sacolinha de mercado vai pra onde",
+        "material_esperado": "plastico",
+        "material_extraido": "",
+        "bairro_esperado": "",
+        "bairro_extraido": ""
+      },
+      {
+        "texto": "rejeito e resíduo são a mesma coisa?",
+        "material_esperado": "",
+        "material_extraido": "rejeito",
+        "bairro_esperado": "",
+        "bairro_extraido": ""
+      },
+      {
+        "texto": "qual o papel das cooperativas de catadores",
+        "material_esperado": "",
+        "material_extraido": "papel",
+        "bairro_esperado": "",
+        "bairro_extraido": ""
+      }
+    ]
+  },
+  "faq": {
+    "acuracia_top1": 0.9444444444444444,
+    "n": 18,
+    "limiar": 0.3,
+    "detalhes": [
+      {
+        "pergunta": "Explica pra mim o que é logística reversa",
+        "esperada": "O que é logística reversa?",
+        "recuperada": "O que é logística reversa?",
+        "similaridade": 0.9,
+        "acerto": true
+      },
+      {
+        "pergunta": "pra que serve a coleta seletiva",
+        "esperada": "O que é coleta seletiva?",
+        "recuperada": "O que é coleta seletiva?",
+        "similaridade": 0.901,
+        "acerto": true
+      },
+      {
+        "pergunta": "o que eu faço com medicamento vencido?",
+        "esperada": "O que fazer com remédio vencido?",
+        "recuperada": "O que fazer com remédio vencido?",
+        "similaridade": 0.717,
+        "acerto": true
+      },
+      {
+        "pergunta": "rejeito e resíduo são a mesma coisa?",
+        "esperada": "Qual a diferença entre rejeito e resíduo?",
+        "recuperada": "Qual a diferença entre rejeito e resíduo?",
+        "similaridade": 0.629,
+        "acerto": true
+      },
+      {
+        "pergunta": "quais cores de lixeira existem e o que vai em cada uma",
+        "esperada": "Quais são as cores das lixeiras da coleta seletiva?",
+        "recuperada": "Quais são as cores das lixeiras da coleta seletiva?",
+        "similaridade": 0.561,
+        "acerto": true
+      },
+      {
+        "pergunta": "por que é importante separar os resíduos em casa",
+        "esperada": "Por que separar o lixo?",
+        "recuperada": "Por que separar o lixo?",
+        "similaridade": 0.62,
+        "acerto": true
+      },
+      {
+        "pergunta": "entulho de reforma, o que fazer?",
+        "esperada": "O que fazer com entulho de obra?",
+        "recuperada": "O que fazer com entulho de obra?",
+        "similaridade": 0.832,
+        "acerto": true
+      },
+      {
+        "pergunta": "como montar uma composteira em casa",
+        "esperada": "Como fazer compostagem em casa?",
+        "recuperada": "Como fazer compostagem em casa?",
+        "similaridade": 0.735,
+        "acerto": true
+      },
+      {
+        "pergunta": "qual o papel das cooperativas de catadores",
+        "esperada": "O que são catadores e cooperativas de reciclagem?",
+        "recuperada": "O que são catadores e cooperativas de reciclagem?",
+        "similaridade": 0.755,
+        "acerto": true
+      },
+      {
+        "pergunta": "seringa usada pode ir no lixo de casa?",
+        "esperada": "Lixo hospitalar pode ir no lixo comum?",
+        "recuperada": "Lixo hospitalar pode ir no lixo comum?",
+        "similaridade": 0.501,
+        "acerto": true
+      },
+      {
+        "pergunta": "o que esse app faz?",
+        "esperada": "Como funciona o aplicativo EcoTriagem?",
+        "recuperada": "",
+        "similaridade": 0.288,
+        "acerto": false
+      },
+      {
+        "pergunta": "lixeira laranja serve pra quê",
+        "esperada": "Quais são as cores das lixeiras da coleta seletiva?",
+        "recuperada": "Quais são as cores das lixeiras da coleta seletiva?",
+        "similaridade": 0.318,
+        "acerto": true
+      },
+      {
+        "pergunta": "isopor dá pra reciclar?",
+        "esperada": "Isopor é reciclável?",
+        "recuperada": "Isopor é reciclável?",
+        "similaridade": 0.673,
+        "acerto": true
+      },
+      {
+        "pergunta": "caixa de pizza suja de gordura recicla?",
+        "esperada": "Posso reciclar caixa de pizza engordurada?",
+        "recuperada": "Posso reciclar caixa de pizza engordurada?",
+        "similaridade": 0.738,
+        "acerto": true
+      },
+      {
+        "pergunta": "caixinha de leite longa vida é reciclável?",
+        "esperada": "Embalagem longa vida (tetra pak) é reciclável?",
+        "recuperada": "Embalagem longa vida (tetra pak) é reciclável?",
+        "similaridade": 0.58,
+        "acerto": true
+      },
+      {
+        "pergunta": "tampa de garrafa pode reciclar?",
+        "esperada": "Tampinha de garrafa é reciclável?",
+        "recuperada": "Tampinha de garrafa é reciclável?",
+        "similaridade": 0.645,
+        "acerto": true
+      },
+      {
+        "pergunta": "qual a capital da Argentina",
+        "esperada": "",
+        "recuperada": "",
+        "similaridade": 0.249,
+        "acerto": true
+      },
+      {
+        "pergunta": "me recomenda um livro de ficção",
+        "esperada": "",
+        "recuperada": "",
+        "similaridade": 0.143,
+        "acerto": true
+      }
+    ]
+  }
+}

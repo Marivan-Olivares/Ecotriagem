@@ -1,0 +1,12 @@
+{
+  "_descricao": "Léxico autoral objeto/termo -> material, usado pelo extrator de entidades (PLN). Variações sem acento e com erros de digitação são tratadas por normalização e casamento aproximado.",
+  "papel": ["papel", "folha", "folha de papel", "jornal", "revista", "caderno", "envelope", "panfleto", "folheto", "apostila", "livro", "papel de presente", "nota fiscal", "cupom fiscal", "boleto", "papel sulfite", "papel a4"],
+  "papelao": ["papelao", "caixa de papelao", "caixa", "caixinha", "caixa de sapato", "caixa de pizza", "rolo de papel higienico", "embalagem de papelao", "caixa de cereal", "papel cartao", "papelão ondulado"],
+  "vidro": ["vidro", "garrafa de vidro", "pote de vidro", "vidrinho", "copo de vidro", "frasco de vidro", "garrafa de cerveja", "long neck", "garrafa de vinho", "pote de conserva", "vidro de perfume", "taca"],
+  "metal": ["metal", "lata", "latinha", "lata de refrigerante", "lata de cerveja", "lata de leite em po", "lata de sardinha", "aluminio", "papel aluminio", "tampinha de metal", "panela", "prego", "parafuso", "arame", "ferro", "aco", "cobre", "marmitex de aluminio"],
+  "plastico": ["plastico", "garrafa pet", "pet", "garrafa plastica", "sacola", "sacola plastica", "saco plastico", "pote de margarina", "pote plastico", "embalagem plastica", "copo descartavel", "copinho", "canudo", "tampa plastica", "frasco de shampoo", "pote de iogurte", "isopor", "embalagem de detergente", "galao", "balde"],
+  "rejeito": ["rejeito", "papel higienico usado", "guardanapo usado", "guardanapo", "fralda", "absorvente", "fita adesiva", "esponja", "bituca", "bituca de cigarro", "cigarro", "chiclete", "fio dental", "espelho", "ceramica", "louca quebrada", "embalagem de salgadinho", "adesivo", "etiqueta", "papel carbono", "embalagem metalizada", "escova de dente"],
+  "organico": ["organico", "resto de comida", "restos de comida", "casca de fruta", "casca de banana", "casca de ovo", "borra de cafe", "folhas secas", "sobra de comida", "comida"],
+  "perigoso": ["pilha", "pilhas", "bateria", "baterias", "bateria de celular", "lampada", "lampada fluorescente", "celular", "eletronico", "eletronicos", "carregador", "fone de ouvido", "computador", "notebook", "teclado", "mouse", "remedio", "remedio vencido", "medicamento", "termometro", "lixo eletronico"],
+  "oleo": ["oleo", "oleo de cozinha", "oleo usado", "oleo de fritura", "gordura"]
+}

@@ -1,0 +1,75 @@
+{
+  "_fonte": "Cores conforme Resolução CONAMA nº 275/2001; destinação conforme Lei nº 12.305/2010 (PNRS). Tempos de decomposição são ordens de grandeza aproximadas, muito dependentes do ambiente, usadas apenas para fins educativos.",
+  "papel": {
+    "nome": "papel",
+    "lixeira": "azul",
+    "reciclavel": true,
+    "categoria": "reciclável",
+    "preparo": ["mantenha o papel seco e limpo", "não amasse em bola; dobre ou empilhe", "papel engordurado, papel higiênico e guardanapo usado não são recicláveis (vão para o rejeito)"],
+    "decomposicao": "de 3 a 6 meses"
+  },
+  "papelao": {
+    "nome": "papelão",
+    "lixeira": "azul",
+    "reciclavel": true,
+    "categoria": "reciclável",
+    "preparo": ["desmonte e achate as caixas para ocupar menos espaço", "remova restos de comida, isopor e excesso de fita adesiva", "mantenha seco: papelão molhado perde valor de reciclagem"],
+    "decomposicao": "cerca de 6 meses"
+  },
+  "vidro": {
+    "nome": "vidro",
+    "lixeira": "verde",
+    "reciclavel": true,
+    "categoria": "reciclável",
+    "preparo": ["enxágue para retirar resíduos", "retire tampas e rolhas (descarte-as conforme o material)", "vidro quebrado deve ser embrulhado em jornal ou caixa e identificado, para proteger os coletores", "espelhos, cerâmica e vidro temperado não entram na reciclagem comum de vidro"],
+    "decomposicao": "tempo indeterminado (milhares de anos)"
+  },
+  "metal": {
+    "nome": "metal",
+    "lixeira": "amarela",
+    "reciclavel": true,
+    "categoria": "reciclável",
+    "preparo": ["enxágue latas e embalagens", "amasse as latinhas para reduzir volume", "latas de tinta ou aerossol com resíduo devem ir a um ecoponto"],
+    "decomposicao": "de 100 a 500 anos"
+  },
+  "plastico": {
+    "nome": "plástico",
+    "lixeira": "vermelha",
+    "reciclavel": true,
+    "categoria": "reciclável",
+    "preparo": ["enxágue embalagens com resto de alimento", "retire a tampa (ela também é reciclável) e amasse garrafas PET", "embalagens metalizadas (salgadinho) e plástico muito sujo geralmente não são aceitos"],
+    "decomposicao": "mais de 400 anos"
+  },
+  "rejeito": {
+    "nome": "rejeito (não reciclável)",
+    "lixeira": "cinza",
+    "reciclavel": false,
+    "categoria": "não reciclável",
+    "preparo": ["acondicione em saco fechado e entregue à coleta regular", "não misture com os recicláveis, para não contaminá-los"],
+    "decomposicao": "variável"
+  },
+  "organico": {
+    "nome": "orgânico",
+    "lixeira": "marrom",
+    "reciclavel": false,
+    "categoria": "orgânico (compostável)",
+    "preparo": ["restos de alimentos podem ser compostados", "se não houver compostagem, descarte na coleta regular em saco fechado"],
+    "decomposicao": "de semanas a poucos meses"
+  },
+  "perigoso": {
+    "nome": "resíduo perigoso (pilha, bateria, lâmpada, eletrônico)",
+    "lixeira": "laranja",
+    "reciclavel": true,
+    "categoria": "logística reversa",
+    "preparo": ["nunca descarte no lixo comum", "leve a um ponto de logística reversa ou ecoponto", "isole os polos de baterias com fita adesiva", "lâmpadas devem ir inteiras e protegidas"],
+    "decomposicao": "contém metais pesados que contaminam solo e água"
+  },
+  "oleo": {
+    "nome": "óleo de cozinha usado",
+    "lixeira": "não se aplica (ponto de coleta específico)",
+    "reciclavel": true,
+    "categoria": "coleta específica",
+    "preparo": ["espere esfriar e coe o óleo", "guarde em garrafa PET bem fechada", "nunca despeje na pia ou no ralo"],
+    "decomposicao": "um litro pode contaminar milhares de litros de água"
+  }
+}
